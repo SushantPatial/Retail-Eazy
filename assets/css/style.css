@@ -258,7 +258,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../images/hero-bg.png") top center no-repeat;
+  background: url("../images/hero-bg.jpg") top center no-repeat;
   background-size: cover;
   position: relative;
   padding-top: 100px;
@@ -282,6 +282,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   flex-direction: column;
   width: 50%;
+  z-index: 1;
 }
 #hero h1 {
   text-align: center;
@@ -356,6 +357,53 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.hero-phone1 {
+  width: 200px; 
+  position: absolute; 
+  top: -30%; 
+  left: 20%;
+  z-index: 0;
+}
+
+.hero-phone2 {
+  width: 200px; 
+  position: absolute; 
+  bottom: -30%; 
+  right: 20%;
+  z-index: 0;
+  filter:blur(80%);
+}
+
+@media screen and (max-width: 900px) {
+  .hero-phone1 {
+    left: 10%
+  }
+  
+  .hero-phone2 {
+    right: 10%
+  }
+}
+
+.blink {
+  animation: blink 0.5s infinite;
+  font-weight: bold !important;
+  color: rgb(255, 255, 255) !important;
+}
+@keyframes blink{
+  to { 
+    opacity: 0; 
+  }
+}
+.flex {
+	display: flex;
+}
+.header-sub-title {
+  color: rgb(226, 226, 226);
+  font-size: 20px;
+  padding: 0.1em;
+  text-align: center;
+}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -416,6 +464,10 @@ section {
 }
 .about .content {
   padding: 30px 30px 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .about .content h3 {
   font-weight: 700;
@@ -472,6 +524,18 @@ section {
   }
 }
 
+.about-logo {
+  width: 270px;
+  animation: infinite 4s rotation linear;
+  
+}
+
+@keyframes rotation {
+  100% { 
+    transform:rotatey(360deg); 
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Video
@@ -485,6 +549,53 @@ section {
 .video iframe {
   box-shadow: 0 0 15px gray;
 }
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.services .services-carousel, .services .services-slider {
+  overflow: hidden;
+}
+.services .services-item {
+  box-sizing: content-box;
+  padding: 30px;
+  margin: 0px 15px 30px 15px;
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  cursor: grab;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.services .services-item .services-img {
+  max-width: 260px;
+  border-radius: 10px;
+  border: 6px solid #fff;
+}
+.services .services-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 25px 0 5px 0;
+  text-align: center;
+  min-height: 80px;
+}
+.services .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+.services .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+}
+.services .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #3a4be0;
+}
+
 
 /*--------------------------------------------------------------
 # Services

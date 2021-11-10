@@ -70,14 +70,17 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
+    <img class="hero-phone1" src="assets/images/hero-phone1.png" data-aos="fade-right">
     <h3 data-aos="zoom-out" data-aos-delay="100">RETAIL E<span>A</span>ZY</h3>
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
       
       <h1>Making Business and Ordering Easy</h1>
-      <h2>The struggle of creating the balance between Manufactures, Distributor​s and Retailers is over NOW...</h2>
+      <div class="flex">
+        <span class="header-sub-title">The struggle of creating the balance between <span class="header-sub-title" id="word"></span><span class="header-sub-title blink">|</span></span>
+      </div>
       <a href="#contact" class="btn-get-started scrollto">BOOK DEMO</a>
     </div>
-
+    <img class="hero-phone2" src="assets/images/hero-phone2.png" data-aos="fade-left">
   </section><!-- End Hero -->
 
   <main id="main">
@@ -89,10 +92,11 @@
         <div class="row no-gutters">
           <div class="content col-xl-5 d-flex align-items-stretch">
             <div class="content">
-              <h3>About us</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
+              <div class="section-title" style="padding-bottom: 0px; margin-bottom: -10px;">
+                <h2>About Us</h2>
+              </div>
+              <img class="about-logo" src="assets/images/RetailEazyHighResolutionICON.png">
+              <img style="margin-top:-160px; width: 230px; margin-bottom: 20px;" src="https://www.transparentpng.com/thumb/shadow/iuqEeA-shadow-png-pic-controlled-drugs-cabinets-from-pharmacy.png">
               <a href="#contact" class="about-btn"><span>Book Demo</span> <i class="bx bx-chevron-right"></i></a>
             </div>
           </div>
@@ -148,40 +152,58 @@
           <h2>Are You Facing These Problems?</h2>
         </div>
 
-        <div class="row">
-          <div class="col-md-5">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/images/i1.png">
-              <h4>Lack of Transparency in Pricing and Schemes offered to Retailers</h4>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/images/i2.png">
-              <h4>Communication gap between company and Retailer due to middlemen</h4>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <img src="assets/images/i3.png">
-              <h4>Irregular Retailer visits of​ Sales Person Resulting in Sales Loss</h4>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-              <img src="assets/images/i4.png">
-              <h4>Low Engagement of Frontliners with retailer causing a dent in brand value</h4>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="500">
-              <img src="assets/images/i1.png">
-              <h4>No transparency of ordering process till fulfilment of the Retailer</h4>
-            </div>
-          </div>
-          
-        </div>
+        <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
 
+            <div class="swiper-slide">
+              <div class="services-wrap">
+                <div class="services-item">
+                  <img src="assets/images/i1.png" class="services-img" alt="">
+                  <h3>Lack of Transparency in Pricing and Schemes offered to Retailers</h3>
+                </div>
+              </div>
+            </div><!-- End services item -->
+  
+            <div class="swiper-slide">
+              <div class="services-wrap">
+                <div class="services-item">
+                  <img src="assets/images/i2.png" class="services-img" alt="">
+                  <h3>Communication gap between company and Retailer due to middlemen</h3>
+                </div>
+              </div>
+            </div><!-- End services item -->
+  
+            <div class="swiper-slide">
+              <div class="services-wrap">
+                <div class="services-item">
+                  <img src="assets/images/i3.png" class="services-img" alt="">
+                  <h3>Irregular Retailer visits of​ Sales Person Resulting in Sales Loss</h3>
+                </div>
+              </div>
+            </div><!-- End services item -->
+
+            <div class="swiper-slide">
+              <div class="services-wrap">
+                <div class="services-item">
+                  <img src="assets/images/i4.png" class="services-img" alt="">
+                  <h3>Low Engagement of Frontliners with retailer causing a dent in brand value</h3>
+                </div>
+              </div>
+            </div><!-- End services item -->
+
+            <div class="swiper-slide">
+              <div class="services-wrap">
+                <div class="services-item">
+                  <img src="assets/images/i1.png" class="services-img" alt="">
+                  <h3>No transparency of ordering process till fulfilment of the Retailer</h3>
+                </div>
+              </div>
+            </div><!-- End services item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+  
       </div>
     </section><!-- End Services Section -->
  
@@ -266,7 +288,7 @@
             </p>
           </div>
         </div>
-        <div class="u-carousel-item u-clearfix u-palette-2-light-3 u-section-5-3" style="background-color: rgb(252, 201, 201);">
+        <div class="u-carousel-item u-clearfix u-palette-2-light-3 u-section-5-3" style="background-color: rgb(173, 185, 253);">
           <div class="u-clearfix u-sheet u-valign-middle-lg u-sheet-1">
             <img class="u-image u-image-default u-image-1" src="assets/images/mobile3.png" alt="" data-image-width="601" data-image-height="1080">
             <div class="u-border-3 u-border-grey-dark-1 u-line u-line-horizontal u-line-1"></div>
