@@ -136,8 +136,8 @@
     AOS.init({
       duration: 1000,
       easing: 'ease-in-out',
-      once: true,
-      mirror: false
+      once: false,
+      mirror: true
     })
   });
 
@@ -224,7 +224,7 @@
   timer = setInterval(Type, 200);
 
   /**
-   * Testimonials slider
+   * Services  slider
    */
    new Swiper('.services-slider', {
     speed: 600,
@@ -250,6 +250,24 @@
         spaceBetween: 20
       }
     }
+  });
+
+  var swiper = new Swiper(".swiper-container", {
+    direction: "vertical",
+    slidesPerView: 1,
+    speed: 2000,
+    preventInteractionOnTransition: true,
+    mousewheel: {
+      releaseOnEdges: true,
+      sensitivity: 10,
+      eventsTarget: '.swiper-container',
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+      clickable: true,
+    },
+    
   });
 
 })()
