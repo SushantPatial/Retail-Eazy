@@ -69,6 +69,10 @@
   flex-wrap: wrap;
 }
 
+.sec-2 h5 {
+  margin: 0;
+}
+
 .stats {
   width: 40%;
   margin: 2%;

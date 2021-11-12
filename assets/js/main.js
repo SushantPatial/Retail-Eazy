@@ -174,7 +174,7 @@
   });
 
   /* Hero typing and deleting effect */
-  const words = ["Manufactures", "Distributor​s", "Retailers"];
+  const words = ["Communication gap between Manufacturers & Retailers", "Blame Game between Distributors & Retailers"];
 
   let i = 0;
   // Character number of the current word being processed 
@@ -191,7 +191,7 @@
     if(text === words[i]) {
       clearInterval(timer);
       setTimeout(function() {
-        timer = setInterval(Delete, 50);
+        timer = setInterval(Delete, 30);
       }, 2000);
     }
   }
@@ -221,7 +221,7 @@
     }
   }
 
-  timer = setInterval(Type, 200);
+  timer = setInterval(Type, 100);
 
   /**
    * Services  slider
@@ -252,7 +252,8 @@
     }
   });
 
-  var swiper = new Swiper(".swiper-container", {
+  
+  let swiper = new Swiper(".swiper-container", {
     direction: "vertical",
     slidesPerView: 1,
     speed: 2000,
@@ -269,5 +270,33 @@
     },
     
   });
+
+  let swiper2 = new Swiper(".slide4-swiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: true,
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+    },
+    pagination: {
+      el: ".swiper-pagination2",
+      clickable: true,
+    },
+  });
+
+  $(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y > 3600 && y < 4450) {
+      $(".waterfall").addClass("water-fixed");
+    } 
+    else {
+      $(".waterfall").removeClass("water-fixed");
+    }
+
+   
+  });
+
+  
 
 })()
