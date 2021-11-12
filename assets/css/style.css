@@ -290,12 +290,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 52px;
   color: #fff;
 }
-#hero h2 {
-  text-align: center;
-  color: #fff;
-  margin: 10px 0 0 0;
-  font-size: 20px;
-}
 #hero h3 {
   font-family:'Courier New', Courier, monospace;
   font-weight: bold;
@@ -308,18 +302,18 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(190, 30, 30);
 }
 #hero h3:before{
-    content: "";
-    position: absolute;
-    width: 59%;
-    height: 1px;
-    bottom: 0;
-    left: 20%;
-    border-bottom: 4px solid rgb(190, 30, 30);
+  content: "";
+  position: absolute;
+  width: 59%;
+  height: 1px;
+  bottom: 0;
+  left: 20%;
+  border-bottom: 4px solid rgb(190, 30, 30);
 }
 
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
@@ -384,6 +378,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.block {
+  width: 94%;
+  display: block !important;
+}
 .blink {
   animation: blink 0.5s infinite;
   font-weight: bold !important;
@@ -394,9 +392,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0; 
   }
 }
-.flex {
-	display: flex;
-}
+
 .header-sub-title {
   color: rgb(226, 226, 226);
   font-size: 20px;
@@ -469,25 +465,18 @@ section {
   justify-content: center;
   flex-direction: column;
 }
-.about .content h3 {
-  font-weight: 700;
-  font-size: 34px;
-  margin-bottom: 30px;
-}
-.about .content p {
-  margin-bottom: 30px;
-}
 .about .content .about-btn {
   padding: 8px 30px 9px 30px;
-  color: #fff;
+  color: rgb(36, 36, 36);
+  background-color: white;
   border-radius: 50px;
   transition: 0.3s;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 13px;
   display: inline-flex;
   align-items: center;
-  border: 2px solid #2e6bbb;
+  border: 2px solid #ffffff;
 }
 .about .content .about-btn i {
   font-size: 16px;
@@ -495,6 +484,8 @@ section {
 }
 .about .content .about-btn:hover {
   background: #2e6bbb;
+  color: white;
+  border: 2px solid #2e6bbb;
 }
 .about .icon-boxes .icon-box {
   margin-top: 30px;
@@ -502,7 +493,7 @@ section {
 .about .icon-boxes .icon-box i {
   font-size: 40px;
   color: #2e6bbb;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .about .icon-boxes .icon-box h4 {
   font-size: 20px;
@@ -527,7 +518,6 @@ section {
 .about-logo {
   width: 270px;
   animation: infinite 4s rotation linear;
-  
 }
 
 @keyframes rotation {
@@ -589,6 +579,10 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
+#services {
+  z-index: 1;
+}
 .services .services-carousel, .services .services-slider {
   overflow: hidden;
 }
@@ -636,16 +630,19 @@ section {
 # Features
 --------------------------------------------------------------*/
 
+#features {
+  margin-top: -160px;
+}
 .carousel-item {
-  padding-top: 30px;
-  background-color: #e7e7e7;
+  padding-top: 140px;
+  background-color: #d9edff;
 }
 .sentences {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  color:#303030;
+  color:#3b3b3b;
   font-weight: bold;
 }
 .sentences .column-1 {
@@ -919,15 +916,17 @@ section {
 
 .slide4-swiper {
   position: absolute;
-  top: 60px;
-  right: 8%;
-  width: 60%;
-  height: 80%;
+  top: 72px;
+  right: 10%;
+  width: 56%;
+  height: 77%;
 }
 .slide4 .slider-img .swiper-slide {
   background-color: white;
 }
-
+.slide4-swiper img {
+  width: 100%;
+}
 .slide4-phone-frame {
   position: absolute;
   top: 60px;
@@ -935,6 +934,8 @@ section {
   width: 20%;
   z-index: 2;
 }
+
+
 
 
 
@@ -978,21 +979,21 @@ section {
 }
 
 .button-submit {
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1px;
-  border: 2px solid #0873d6;
-  padding: 10px 20px;
+  border: 3px solid #075299;
+  padding: 12px 24px;
   background-color: transparent;
   color: white;
   cursor: pointer;
-  box-shadow: inset 0 0 0 0 #0873d6;
+  box-shadow: inset 0 0 0 0 #075299;
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
 }
 
 .button-submit:hover {
-  box-shadow: inset 0 0 0 50px #0873d6;
+  box-shadow: inset 0 0 0 50px #075299;
 }
 
 .button-submit:focus {

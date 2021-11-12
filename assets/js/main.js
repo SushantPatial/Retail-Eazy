@@ -272,6 +272,7 @@
   });
 
   let swiper2 = new Swiper(".slide4-swiper", {
+    loop: true,
     slidesPerView: 3,
     spaceBetween: 30,
     freeMode: true,
@@ -293,10 +294,7 @@
     else {
       $(".waterfall").removeClass("water-fixed");
     }
-
-   
   });
 
-  
 
 })()
