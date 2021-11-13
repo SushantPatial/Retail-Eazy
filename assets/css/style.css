@@ -749,7 +749,7 @@ section {
   width: 25%;
   height: 100%;
   padding: 0 20px 0 30px;
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(20, 26, 41);
   display: flex;
   align-items: left;
   justify-content: center;
@@ -758,7 +758,7 @@ section {
 }
 .waterfall .swiper-info h2 {
   position: relative;
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 40px;
   color: white;
@@ -774,6 +774,7 @@ section {
 
 .waterfall .swiper-info p {
   color: rgb(214, 214, 214);
+  font-size: 20px;
   margin-top: 10px;
   transition: 1s;
   transform: translateY(-120px);
