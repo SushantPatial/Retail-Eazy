@@ -5,24 +5,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  position: relative;
+  top: 50px;
 }
 
-.sec-1 {
+#stats-box .sec-1 {
   width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.years {
+#stats-box .years {
   font-size: 350px;
   text-align: center;
   font-weight: bold;
   line-height: 1;
 }
 
-.text-img {
+#stats-box .text-img {
   position: relative;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(to bottom right, #1F305D, rgb(24, 95, 177));
@@ -62,7 +63,7 @@
 }
 
 
-.sec-2 {
+#stats-box .sec-2 {
   width: 40%;
   display: flex;
 	justify-content: center;
@@ -96,7 +97,6 @@
   display: flex;
   flex-direction: row;
 }
-
 
 .button {
   margin: 0 auto;
@@ -143,20 +143,23 @@
 	transform: translate3d(100%,0,0);
 }
 
-@media screen and (max-width: 1000px) {
-  p {
-    font-size: 20px;
+@media screen and (max-width: 1100px) {
+  #stats-box {
+    top: -70px;
   }
-  .stats-div {
+}
+
+@media screen and (max-width: 1000px) {
+  #stats-box {
     height: 100%;
     flex-direction: column;
   }
-  .sec-1 {
+  #stats-box .sec-1 {
     width: 100%;
     height: 400px;
     margin-right: 50px;
   }
-  .sec-2 {
+  #stats-box .sec-2 {
     width: 100%;
     align-items: normal;
     flex-wrap: nowrap;
@@ -174,4 +177,70 @@
   }
 }
 
+@media screen and (max-width: 750px) {
+  #stats-box .years {
+    font-size: 300px;
+  }
+  .experience {
+    width: 100%;
+  }
+  #particles-js {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+  }
+  .particles-js-canvas-el {
+    left: 2%;
+  }
+  .experience h2 {
+    font-size: 30px !important;
+  }
+  .experience h6 {
+    font-size: 15px;
+  }
+  .button {
+    padding: 1.2rem 2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #stats-box {
+    margin-top: -100px;
+  }
+  #stats-box .years {
+    font-size: 170px;
+  }
+  .experience h2 {
+    font-size: 24px !important;
+    padding-left: 10px;
+    margin-bottom: 30px;
+  }
+  .experience h6 {
+    font-size: 14px;
+    display: none;
+  }
+  #particles-js {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+  }
+  .button {
+    padding: 0.8rem 1rem;
+    margin: 0;
+  }
+  .button--mimas {
+    font-size: 10px;
+  }
+  .stats {
+    margin-top: -70px;
+    font-size: 22px;
+  }
+  .stats .fas {
+    color: #1F305D;
+    font-size: 40px;
+  }
+  .sec-2 h5 {
+    font-size: 14px;
+  }
+}
 

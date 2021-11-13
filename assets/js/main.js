@@ -160,7 +160,7 @@
           countNum: countTo
         },
         {
-          duration: 2000,
+          duration: 5000,
           easing:'linear',
           step: function() {
             $this.text(Math.floor(this.countNum));
@@ -273,9 +273,9 @@
 
   let swiper2 = new Swiper(".slide4-swiper", {
     loop: true,
+    simulateTouch: false,
     slidesPerView: 3,
     spaceBetween: 30,
-    freeMode: true,
     speed: 1000,
     autoplay: {
       delay: 2000,
@@ -288,11 +288,13 @@
 
   $(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y > 3600 && y < 4450) {
+    if (y > 3500 && y < 4350 && window.innerWidth > 1100) {
       $(".waterfall").addClass("water-fixed");
+      $("#header").fadeOut();
     } 
     else {
       $(".waterfall").removeClass("water-fixed");
+      $("#header").fadeIn();
     }
   });
 
