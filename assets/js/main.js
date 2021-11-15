@@ -288,7 +288,7 @@
 
   $(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y > 3500 && y < 4350 && window.innerWidth > 1100) {
+    if (y > 3300 && y < 4000 && window.innerWidth > 1100) {
       $(".waterfall").addClass("water-fixed");
       $("#header").fadeOut();
     } 
