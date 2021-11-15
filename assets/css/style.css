@@ -289,6 +289,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin: 0;
   font-size: 52px;
+  margin-bottom: 20px;
   color: #fff;
 }
 #hero h3 {
@@ -316,11 +317,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 900;
+  font-size: 18px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 30px;
+  padding: 10px 20px;
   border-radius: 4px;
   transition: 0.5s;
   margin-top: 30px;
@@ -398,8 +399,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-sub-title {
-  background-color: rgb(45, 161, 238);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(31, 31, 31);
   padding: 0 1px;
   font-size: 20px;
   text-align: center;
@@ -482,13 +483,13 @@ section {
   transition: 0.3s;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 15px;
   display: inline-flex;
   align-items: center;
   border: 2px solid #ffffff;
 }
 .about .content .about-btn i {
-  font-size: 16px;
+  font-size: 20px;
   padding-left: 5px;
 }
 .about .content .about-btn:hover {
@@ -501,7 +502,7 @@ section {
 }
 .about .icon-boxes .icon-box i {
   font-size: 40px;
-  color: #2e6bbb;
+  color: #b9b9b9;
   margin-bottom: 20px;
 }
 .about .icon-boxes .icon-box h4 {
@@ -511,7 +512,7 @@ section {
 }
 .about .icon-boxes .icon-box p {
   font-size: 15px;
-  color: #a7a7a7;
+  color: #c2c2c2;
 }
 @media (max-width: 1200px) {
   .about .content {
@@ -908,7 +909,7 @@ section {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #FFF;
+  background-color: rgb(218, 218, 218);
   visibility: hidden;
   transition: all 0.5s ease-in-out;
 }
@@ -927,7 +928,7 @@ section {
 }
 
 .waterfall .swiper-info p i {
-  opacity: 0.2;
+  opacity: 0.1;
   transition: 1s;
   color:rgb(25, 130, 216);
 }
@@ -1344,6 +1345,10 @@ section {
 #contact .footer-downloads img {
   max-width: 200px;
   margin: 10px;
+  transition: 0.3s ease;
+}
+#contact .footer-downloads img:hover {
+  transform: scale(1.03);
 }
 
 #contact .d-md-flex {
@@ -1381,3 +1386,56 @@ section {
 
 
 
+.test {
+  background-color: #1F305D;
+  height: 100%;;
+}
+.test-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1F305D;
+}
+.test-div .left-col {
+  width: 100%;
+  max-width: 260px;
+  margin-right: 40px;
+  background-color: red;
+}
+.test-div .left-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100px;
+  z-index: 2;
+}
+.left-arrows img {
+  
+  height: 150px;
+  position: absolute;
+}
+.left-arrow1 {
+  top: 0;
+}
+.test-div .phone-col{
+  width: 270px
+}
+.test-div .right-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100px;
+  z-index: 2;
+}
+.right-arrows img {
+  max-width: 200px;
+  height: 150px;
+  position: absolute;
+}
+.test-div .right-col {
+  width: 100%;
+  max-width: 260px;
+  margin-left: 40px;
+}

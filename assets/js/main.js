@@ -160,7 +160,7 @@
           countNum: countTo
         },
         {
-          duration: 5000,
+          duration: 3000,
           easing:'linear',
           step: function() {
             $this.text(Math.floor(this.countNum));
@@ -288,7 +288,7 @@
 
   $(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y > 3300 && y < 4000 && window.innerWidth > 1100) {
+    if (y > 2500 && y <  3200 && window.innerWidth > 1100) {
       $(".waterfall").addClass("water-fixed");
       $("#header").fadeOut();
     } 
