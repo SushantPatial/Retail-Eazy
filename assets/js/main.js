@@ -81,7 +81,7 @@
   let backtotop = select('.back-to-top')
   if (backtotop) {
     const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 200) {
         backtotop.classList.add('active')
       } else {
         backtotop.classList.remove('active')
@@ -89,6 +89,20 @@
     }
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
+  }
+
+  /* Book Demo button */
+  let bookdemobtn = select('.book-demo-btn')
+  if (bookdemobtn) {
+    const bookDemo = () => {
+      if (window.scrollY > 200) {
+        bookdemobtn.classList.add('active')
+      } else {
+        bookdemobtn.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', bookDemo)
+    onscroll(document, bookDemo)
   }
 
   /* Mobile nav toggle */
@@ -140,6 +154,7 @@
       mirror: true
     })
   });
+ 
 
   /* Detect scroll to div */
   function isScrolledIntoView(elem) {
