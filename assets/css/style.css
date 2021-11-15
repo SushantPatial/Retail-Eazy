@@ -1319,9 +1319,13 @@ section {
   line-height: 1;
 }
 #contact .footer-top .footer-links ul li {
-  padding: 10px 0;
+  margin: 20px 0;
   display: flex;
   align-items: center;
+  transition: 0.3s ease;
+}
+#contact .footer-top .footer-links ul li:hover {
+  transform: translateX(5px);
 }
 #contact .footer-top .footer-links ul li:first-child {
   padding-top: 0;
@@ -1405,6 +1409,9 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+  #contact .info-box p {
+    text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
