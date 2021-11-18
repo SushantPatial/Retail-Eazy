@@ -290,6 +290,7 @@
     loop: true,
     simulateTouch: false,
     slidesPerView: 3,
+    centeredSlides: true,
     spaceBetween: 30,
     speed: 1000,
     autoplay: {

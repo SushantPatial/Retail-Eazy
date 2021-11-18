@@ -278,6 +278,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 50%;
   z-index: 1;
 }
+#hero .hero-logo {
+  width: 280px;
+  margin-bottom: 20px;
+  z-index: 1;
+}
 #hero h1 {
   font-family: 'Raleway', sans-serif;
   text-align: center;
@@ -286,32 +291,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
   color: #fff;
 }
-#hero h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 44px;
-  color: rgb(233, 233, 233);
-  padding-bottom: 5px;
-  position: relative;
-  position: absolute;
-  top: 100px;
-  z-index: 1;
-}
-#hero h3 span {
-  font-family: 'Montserrat', sans-serif;
-  color: rgb(190, 30, 30);
-  font-weight: 400;
-}
-#hero h3:before {
-  content: "";
-  position: absolute;
-  width: 59%;
-  height: 1px;
-  bottom: 0;
-  left: 20%;
-  border-bottom: 4px solid rgb(190, 30, 30);
-}
-
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
   font-weight: 900;
@@ -338,44 +317,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+  #hero .hero-logo {
+    width: 250px;
+  }
   #hero h1 {
     font-size: 34px;
   }
 }
+
 @media (max-height: 500px) {
   #hero {
     height: 120vh;
   }
 }
 
-.hero-phone1 {
-  width: 200px; 
-  position: absolute; 
-  top: -30%; 
-  left: 20%;
-  z-index: 3;
-}
-
-.hero-phone2 {
-  width: 200px; 
-  position: absolute; 
-  bottom: -30%; 
-  right: 20%;
-  z-index: 3;
-}
-
-@media screen and (max-width: 900px) {
-  .hero-phone1 {
-    left: 10%
-  }
-  .hero-phone2 {
-    right: 10%
-  }
-}
-
 .block {
   width: 94%;
-  height: 50px;
+  height: 70px;
   display: block !important;
   font-family: 'Raleway', sans-serif;
 }
@@ -606,7 +564,7 @@ section {
 }
 .video1 {
   left: 20px;
-  top: 48.5%;
+  top: 48.2%;
   z-index: 3;
   border-radius: 10px;
   width: 330px; 
@@ -624,6 +582,21 @@ section {
   width: 295px; 
   height: 190px;
   z-index: 3;
+}
+
+@media screen and (min-width: 1400px) {
+  .video1 {
+    left: 110px;
+    top: 48.2%;
+  }
+  .video2 {
+    left: 33.15%;
+    top: 5.6%;
+  }
+  .video3 {
+    right: 118px;
+    top: 35%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -795,18 +768,25 @@ section {
 
 .features {
   margin-top: -100px;
-  padding-top:130px;
-  background-color: #d9edff;
+  padding-top: 200px;
+  background-color: #141A29;
+}
+.features .section-title h2 {
+  color: white;
 }
 .carousel-item {
-  background-color: #d9edff;
+  background-color: #141A29;
+}
+.carousel-img {
+  width: 100%;
+  height: 100%;
 }
 .sentences {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  color:#3b3b3b;
+  color:#ffffff;
   font-weight: bold;
 }
 .sentences .column-1 {
@@ -836,10 +816,11 @@ section {
   font-size: 25px;
   letter-spacing: -3px;
   font-weight: 900;
-  color: rgb(78, 78, 78);
+  color: rgb(167, 166, 166);
 }
 .carousel-control-next, .carousel-control-prev {
   width: 100px;
+  color: white;
 }
 @media screen and (max-width: 1300px) {
   .remove1 {
@@ -1157,23 +1138,25 @@ section {
 .slide4-swiper {
   position: absolute;
   top: 72px;
-  right: 10%;
-  width: 56%;
+  right: 100px;
+  width: 60%;
   height: 87%;
 }
 .slide4 .slider-img .swiper-slide {
   background-color: transparent;
 }
 .slide4-swiper img {
-  width: 100%;
-  height: 89%;
+  margin-top: 2px;
+  min-width: 240px;
+  height: 88.5%;
 }
 .slide4-phone-frame {
   position: absolute;
   top: 60px;
   right: 28%;
   left: 52%;
-  max-width: 270px;
+  width: 20.2%;
+  min-height: 537px;
   z-index: 2;
 }
 
@@ -1417,60 +1400,4 @@ section {
     width: 70%;
   }
 
-}
-
-
-
-.test {
-  background-color: #1F305D;
-  height: 100%;;
-}
-.test-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #1F305D;
-}
-.test-div .left-col {
-  width: 100%;
-  max-width: 260px;
-  margin-right: 40px;
-  background-color: red;
-}
-.test-div .left-arrows {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  max-width: 100px;
-  z-index: 2;
-}
-.left-arrows img {
-  
-  height: 150px;
-  position: absolute;
-}
-.left-arrow1 {
-  top: 0;
-}
-.test-div .phone-col{
-  width: 270px
-}
-.test-div .right-arrows {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  max-width: 100px;
-  z-index: 2;
-}
-.right-arrows img {
-  max-width: 200px;
-  height: 150px;
-  position: absolute;
-}
-.test-div .right-col {
-  width: 100%;
-  max-width: 260px;
-  margin-left: 40px;
 }
