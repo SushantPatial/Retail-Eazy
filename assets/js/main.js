@@ -315,4 +315,16 @@
   });
 
 
+  $( window ).resize(function() {
+    if ($(window).width() < 700) {
+      $(".features-img").attr("src","assets/images/features-mobile.png");
+      $(".features-img").addClass("features-img-mobile");
+    }
+    else {
+      $(".features-img").attr("src","assets/images/features.png");
+      $(".features-img").removeClass("features-img-mobile");
+    }
+ });
+
+
 })()
