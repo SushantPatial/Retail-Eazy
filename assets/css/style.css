@@ -465,6 +465,12 @@ section {
   position: relative;
   bottom: 4px;
 }
+@media screen and (max-width: 576px) {
+  .about .content .section-title img {
+    width: 160px;
+    bottom: 3px;
+  }
+}
 .about .content .section-title h2 span {
   position: relative;
   bottom: 2px;
