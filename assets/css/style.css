@@ -963,10 +963,10 @@ section {
   transition: 1s ease;
 }
 .slide2-phone1 {
-  right: 37%;
+  right: 39%;
 }
 .slide2-phone2 {
-  right: 9%;
+  right: 7%;
 }
 .slide2:hover .slide2-phone {
   margin-bottom: 0px;
