@@ -138,21 +138,39 @@
       <!-- ======= Video Section ======= -->
       <section id="video" class="video" data-aos="fade-up">
         <div class="section-title">
-          <h2>A Short Video Tutorial</h2>
+          <h2>Some Short Video Tutorials</h2>
         </div>
         <div class="container">  
           <div class="screens">
-            <img class="mobile" src="assets//images/phone.png">
+            <img class="mobile" src="assets/images/phone.png">
             <img class="laptop" src="assets/images/laptop.png">
-            <img class="tablet" src="assets//images/tablet.png">
+            <img class="tablet" src="assets/images/tablet.png">
           </div>
           <div class="videos">
-            <iframe class="video1" src="https://www.youtube.com/embed/s0ty0LRryNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe class="video2" src="https://www.youtube.com/embed/wsGZB63xW3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe class="video3" src="https://www.youtube.com/embed/4siwYXYZbEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+              <img class="video1-thumb" src="assets/images/video-thumb-1.png">
+            </div>
+            <div style="display:none">
+              <iframe id="video1" class="video1" src="https://www.youtube.com/embed/s0ty0LRryNU?autoplay=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+              <img class="video2-thumb" src="assets/images/video-thumb-2.png">
+            </div>
+            <div style="display:none">
+              <iframe id="video2" class="video2" src="https://www.youtube.com/embed/wsGZB63xW3U?autoplay=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+              <img class="video3-thumb" src="assets/images/video-thumb-3.png">
+            </div>
+            <div style="display:none">
+              <iframe id="video3" class="video3" src="https://www.youtube.com/embed/4siwYXYZbEQ?autoplay=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+
           </div>
-        
         </div>
+        
       </section><!-- End Tabs Section -->
       
     </div>
