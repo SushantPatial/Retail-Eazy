@@ -1181,38 +1181,38 @@ section {
   margin-top: -250px;
   top: 0px;
 }
-.animate-slide1-mobile-phone1 {
+.animate1-slide1-mobile-phone1 {
   margin-top: 0px;
   top: 50px;
 }
 .slide1-mobile-phone2 {
   top: -100px;
 }
-.animate-slide1-mobile-phone2 {
+.animate1-slide1-mobile-phone2 {
   top: -80px;
 }
 .slide1-mobile-phone3 {
   top: -140px;
 }
-.animate-slide1-mobile-phone3 {
+.animate1-slide1-mobile-phone3 {
   top: -120px;
 }
 .slide1-mobile-phone4 {
   margin-bottom: -550px;
 }
-.animate-slide1-mobile-phone4 {
+.animate1-slide1-mobile-phone4 {
   margin-bottom: -125px;
 }
 .slide1-mobile-phone5 {
   top: -60px;
 }
-.animate-slide1-mobile-phone5 {
+.animate1-slide1-mobile-phone5 {
   top: -80px;
 }
 .slide1-mobile-phone6 {
   top: -100px;
 }
-.animate-slide1-mobile-phone6 {
+.animate1-slide1-mobile-phone6 {
   top: -120px;
 }
 .slide1-mobile-phone7 {
@@ -1233,7 +1233,7 @@ section {
 .slide2-mobile-phone2 {
   bottom: -40px;
 }
-.animate-slide2-mobile-phone {
+.animate1-slide2-mobile-phone {
   bottom: 0px;
 }
 
@@ -1247,7 +1247,7 @@ section {
   top: 420px;
   left: -8px;
 }
-.animate-slide3-mobile-phone1 {
+.animate1-slide3-mobile-phone1 {
   top: 360px;
   left: 45px;
 }
@@ -1263,7 +1263,7 @@ section {
   top: 120px;
   right: 60px;
 }
-.animate-slide3-mobile-phone3 {
+.animate1-slide3-mobile-phone3 {
   top: 120px;
   right: 60px;
 }
@@ -1271,7 +1271,7 @@ section {
   top: 330px;
   right: 168px;
 }
-.animate-slide3-mobile-phone4 {
+.animate1-slide3-mobile-phone4 {
   top: 270px;
   right: 120px;
 }
@@ -1279,7 +1279,7 @@ section {
   top: -460px;
   left: 258px;
 }
-.animate-slide3-mobile-phone5 {
+.animate1-slide3-mobile-phone5 {
   top: -400px;
   left: 210px;
 }
@@ -1315,10 +1315,7 @@ section {
     color: rgb(214, 214, 214);
     font-size: 16px;
     margin-top: 10px;
-    transition: 1s;
-    transform: translateX(-80px);
   }
-
 
   .waterfall-mobile .mobile-slider-img {
     max-width: 350px;
@@ -1333,39 +1330,20 @@ section {
     margin-top: -200px;
     top: 0px;
   }
-  .slide-mobile1:hover .slide1-mobile-phone1 {
-    margin-top: 0px;
-    top: 20px;
-  }
   .slide1-mobile-phone2 {
     top: -80px;
-  }
-  .slide-mobile1:hover .slide1-mobile-phone2 {
-    top: -60px;
   }
   .slide1-mobile-phone3 {
     top: -100px;
   }
-  .slide-mobile1:hover .slide1-mobile-phone3 {
-    top: -80px;
-  }
   .slide1-mobile-phone4 {
     margin-bottom: -300px;
-  }
-  .slide-mobile1:hover .slide1-mobile-phone4 {
-    margin-bottom: -50px;
   }
   .slide1-mobile-phone5 {
     top: -40px;
   }
-  .slide-mobile1:hover .slide1-mobile-phone5 {
-    top: -60px;
-  }
   .slide1-mobile-phone6 {
     top: -60px;
-  }
-  .slide-mobile1:hover .slide1-mobile-phone6 {
-    top: -80px;
   }
   .slide1-mobile-phone7 {
     display: none;
@@ -1374,7 +1352,7 @@ section {
   .slide2-mobile-phone {
     width: 150px;
   }
-  
+
   .slide3-mobile-phone {
     width: 80px;
   }
@@ -1382,49 +1360,67 @@ section {
     top: -40px;
     left: 70px;
   }
-  .slide-mobile3:hover .slide3-mobile-phone1 {
-    top: 0px;
-    left: 40px;
-  }
   .slide3-mobile-phone2 {
     top: 0px;
     right: -68px;
-  }
-  .slide-mobile3:hover .slide3-mobile-phone2 {
-    top: 40px;
-    right: -38px;
   }
   .slide3-mobile-phone3 {
     top: 125px;
     right: -5px;
   }
-  .slide-mobile3:hover .slide3-mobile-phone3 {
-    top: 85px;
-    right: -35px;
-  }
   .slide3-mobile-phone4 {
     top: -120px;
     right: -8px;
-  }
-  .slide-mobile3:hover .slide3-mobile-phone4 {
-    top: -80px;
-    right: 18px;
   }
   .slide3-mobile-phone5 {
     top: 30px;
     left: -115px;
   }
-  .slide-mobile3:hover .slide3-mobile-phone5 {
-    top: 20px;
-    left: -105px;
-  }
-  
   .slide4-mobile-swiper {
     min-width: 600px;
   }
 }
 
+.animate2-slide1-mobile-phone1 {
+  margin-top: 0px;
+  top: 20px;
+}
+.animate2-slide1-mobile-phone2 {
+  top: -60px;
+}
+.animate2-slide1-mobile-phone3 {
+  top: -80px;
+}
+.animate2-slide1-mobile-phone4 {
+  margin-bottom: -50px;
+}
+.animate2-slide1-mobile-phone6 {
+  top: -80px;
+}
+.animate2-slide1-mobile-phone5 {
+  top: -60px;
+}
 
+.animate2-slide3-mobile-phone1 {
+  top: 0px;
+  left: 40px;
+}
+.animate2-slide3-mobile-phone2 {
+  top: 40px;
+  right: -38px;
+}
+.animate2-slide3-mobile-phone3 {
+  top: 85px;
+  right: -35px;
+}
+.animate2-slide3-mobile-phone4 {
+  top: -80px;
+  right: 18px;
+}
+.animate2-slide3-mobile-phone5 {
+  top: 20px;
+  left: -105px;
+}
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/

@@ -343,55 +343,89 @@
     }
   });
 
-
+  // For tablets
   $(window).scroll(function(){
-    if ($(window).scrollTop() >= $('.slide-mobile1').offset().top || $(window).scrollTop() <= $('.slide-mobile1').offset().top + $('.slide-mobile1').height() - 400) {
-      $('.slide1-mobile-phone1').addClass('animate-slide1-mobile-phone1');
-      $('.slide1-mobile-phone2').addClass('animate-slide1-mobile-phone2');
-      $('.slide1-mobile-phone3').addClass('animate-slide1-mobile-phone3');
-      $('.slide1-mobile-phone4').addClass('animate-slide1-mobile-phone4');
-      $('.slide1-mobile-phone5').addClass('animate-slide1-mobile-phone5');
-      $('.slide1-mobile-phone6').addClass('animate-slide1-mobile-phone6');
-
-      $('.mobile-swiper-info-h2').addClass('animate-mobile-swiper-info-h2');
-      $('.mobile-swiper-info-p').addClass('animate-mobile-swiper-info-p');
-      $('.mobile-swiper-info-i').addClass('animate-mobile-swiper-info-i'); 
-          
+    if (($(window).scrollTop() >= $('.slide-mobile1').offset().top - 200 || $(window).scrollTop() <= $('.slide-mobile1').offset().top + $('.slide-mobile1').height() - 400) && ($(window).width() <= 1200 && $(window).width() > 620)) {
+      $('.slide1-mobile-phone1').addClass('animate1-slide1-mobile-phone1');
+      $('.slide1-mobile-phone2').addClass('animate1-slide1-mobile-phone2');
+      $('.slide1-mobile-phone3').addClass('animate1-slide1-mobile-phone3');
+      $('.slide1-mobile-phone4').addClass('animate1-slide1-mobile-phone4');
+      $('.slide1-mobile-phone5').addClass('animate1-slide1-mobile-phone5');
+      $('.slide1-mobile-phone6').addClass('animate1-slide1-mobile-phone6');      
     }
-    if ($(window).scrollTop() <= $('.slide-mobile1').offset().top || $(window).scrollTop() >= $('.slide-mobile1').offset().top + $('.slide-mobile1').height() - 400) {
-      $('.slide1-mobile-phone1').removeClass('animate-slide1-mobile-phone1');
-      $('.slide1-mobile-phone2').removeClass('animate-slide1-mobile-phone2');
-      $('.slide1-mobile-phone3').removeClass('animate-slide1-mobile-phone3');
-      $('.slide1-mobile-phone4').removeClass('animate-slide1-mobile-phone4');
-      $('.slide1-mobile-phone5').removeClass('animate-slide1-mobile-phone5');
-      $('.slide1-mobile-phone6').removeClass('animate-slide1-mobile-phone6');   
-
-      $('.mobile-swiper-info-h2').removeClass('animate-mobile-swiper-info-h2');
-      $('.mobile-swiper-info-p').removeClass('animate-mobile-swiper-info-p');
-      $('.mobile-swiper-info-i').removeClass('animate-mobile-swiper-info-i');     
+    if (($(window).scrollTop() <= $('.slide-mobile1').offset().top - 200 || $(window).scrollTop() >= $('.slide-mobile1').offset().top + $('.slide-mobile1').height() - 400) && ($(window).width() <= 1200 && $(window).width() > 620)) {
+      $('.slide1-mobile-phone1').removeClass('animate1-slide1-mobile-phone1');
+      $('.slide1-mobile-phone2').removeClass('animate1-slide1-mobile-phone2');
+      $('.slide1-mobile-phone3').removeClass('animate1-slide1-mobile-phone3');
+      $('.slide1-mobile-phone4').removeClass('animate1-slide1-mobile-phone4');
+      $('.slide1-mobile-phone5').removeClass('animate1-slide1-mobile-phone5');
+      $('.slide1-mobile-phone6').removeClass('animate1-slide1-mobile-phone6');       
     }
 
-    if ($(window).scrollTop() >= $('.slide-mobile2').offset().top || $(window).scrollTop() <= $('.slide-mobile2').offset().top + $('.slide-mobile2').height() - 400) {
-      $('.slide2-mobile-phone').addClass('animate-slide2-mobile-phone');      
+    if (($(window).scrollTop() >= $('.slide-mobile2').offset().top - 200 || $(window).scrollTop() <= $('.slide-mobile2').offset().top + $('.slide-mobile2').height() - 400) && ($(window).width() <= 1200 && $(window).width() > 620)) {
+      $('.slide2-mobile-phone').addClass('animate1-slide2-mobile-phone');      
     }
-    if ($(window).scrollTop() <= $('.slide-mobile2').offset().top || $(window).scrollTop() >= $('.slide-mobile2').offset().top + $('.slide-mobile2').height() - 400) {
-      $('.slide2-mobile-phone').removeClass('animate-slide2-mobile-phone');   
+    if (($(window).scrollTop() <= $('.slide-mobile2').offset().top - 200 || $(window).scrollTop() >= $('.slide-mobile2').offset().top + $('.slide-mobile2').height() - 400) && ($(window).width() <= 1200 && $(window).width() > 620)) {
+      $('.slide2-mobile-phone').removeClass('animate1-slide2-mobile-phone');   
     }
 
-    if ($(window).scrollTop() >= $('.slide-mobile3').offset().top || $(window).scrollTop() <= $('.slide-mobile3').offset().top + $('.slide-mobile3').height() - 400) {
-      $('.slide3-mobile-phone1').addClass('animate-slide3-mobile-phone1');
-      $('.slide3-mobile-phone2').addClass('animate-slide3-mobile-phone2');
-      $('.slide3-mobile-phone3').addClass('animate-slide3-mobile-phone3');
-      $('.slide3-mobile-phone4').addClass('animate-slide3-mobile-phone4');
-      $('.slide3-mobile-phone5').addClass('animate-slide3-mobile-phone5');   
+    if (($(window).scrollTop() >= $('.slide-mobile3').offset().top - 200 || $(window).scrollTop() <= $('.slide-mobile3').offset().top + $('.slide-mobile3').height() - 400) && ($(window).width() <= 1200 && $(window).width() > 620)) {
+      $('.slide3-mobile-phone1').addClass('animate1-slide3-mobile-phone1');
+      $('.slide3-mobile-phone2').addClass('animate1-slide3-mobile-phone2');
+      $('.slide3-mobile-phone3').addClass('animate1-slide3-mobile-phone3');
+      $('.slide3-mobile-phone4').addClass('animate1-slide3-mobile-phone4');
+      $('.slide3-mobile-phone5').addClass('animate1-slide3-mobile-phone5');   
     }
-    if ($(window).scrollTop() <= $('.slide-mobile3').offset().top || $(window).scrollTop() >= $('.slide-mobile3').offset().top + $('.slide-mobile3').height() - 400) {
-      $('.slide3-mobile-phone1').removeClass('animate-slide3-mobile-phone1');
-      $('.slide3-mobile-phone2').removeClass('animate-slide3-mobile-phone2');
-      $('.slide3-mobile-phone3').removeClass('animate-slide3-mobile-phone3');
-      $('.slide3-mobile-phone4').removeClass('animate-slide3-mobile-phone4');
-      $('.slide3-mobile-phone5').removeClass('animate-slide3-mobile-phone5');     
+    if (($(window).scrollTop() <= $('.slide-mobile3').offset().top - 200 || $(window).scrollTop() >= $('.slide-mobile3').offset().top + $('.slide-mobile3').height() - 400) && ($(window).width() <= 1200 && $(window).width() > 620)) {
+      $('.slide3-mobile-phone1').removeClass('animate1-slide3-mobile-phone1');
+      $('.slide3-mobile-phone2').removeClass('animate1-slide3-mobile-phone2');
+      $('.slide3-mobile-phone3').removeClass('animate1-slide3-mobile-phone3');
+      $('.slide3-mobile-phone4').removeClass('animate1-slide3-mobile-phone4');
+      $('.slide3-mobile-phone5').removeClass('animate1-slide3-mobile-phone5');     
     }
   });
+
+  // For phones
+  $(window).scroll(function(){
+    if (($(window).scrollTop() >= $('.slide-mobile1').offset().top - 200 || $(window).scrollTop() <= $('.slide-mobile1').offset().top + $('.slide-mobile1').height() - 400) && $(window).width() <= 620) {
+      $('.slide1-mobile-phone1').addClass('animate2-slide1-mobile-phone1');
+      $('.slide1-mobile-phone2').addClass('animate2-slide1-mobile-phone2');
+      $('.slide1-mobile-phone3').addClass('animate2-slide1-mobile-phone3');
+      $('.slide1-mobile-phone4').addClass('animate2-slide1-mobile-phone4');
+      $('.slide1-mobile-phone5').addClass('animate2-slide1-mobile-phone5');
+      $('.slide1-mobile-phone6').addClass('animate2-slide1-mobile-phone6');      
+    }
+    if ((($(window).scrollTop() <= $('.slide-mobile1').offset().top - 200 || $(window).scrollTop() >= $('.slide-mobile1').offset().top + $('.slide-mobile1').height() - 400) && $(window).width() <= 620) || $(window).width() > 620) {
+      $('.slide1-mobile-phone1').removeClass('animate2-slide1-mobile-phone1');
+      $('.slide1-mobile-phone2').removeClass('animate2-slide1-mobile-phone2');
+      $('.slide1-mobile-phone3').removeClass('animate2-slide1-mobile-phone3');
+      $('.slide1-mobile-phone4').removeClass('animate2-slide1-mobile-phone4');
+      $('.slide1-mobile-phone5').removeClass('animate2-slide1-mobile-phone5');
+      $('.slide1-mobile-phone6').removeClass('animate2-slide1-mobile-phone6');       
+    }
+
+    if (($(window).scrollTop() >= $('.slide-mobile2').offset().top - 200 || $(window).scrollTop() <= $('.slide-mobile2').offset().top + $('.slide-mobile2').height() - 400) && $(window).width() <= 620) {
+      $('.slide2-mobile-phone').addClass('animate1-slide2-mobile-phone');      
+    }
+    if ((($(window).scrollTop() <= $('.slide-mobile2').offset().top - 200 || $(window).scrollTop() >= $('.slide-mobile2').offset().top + $('.slide-mobile2').height() - 400) && $(window).width() <= 620)) {
+      $('.slide2-mobile-phone').removeClass('animate1-slide2-mobile-phone');   
+    }
+
+    if (($(window).scrollTop() >= $('.slide-mobile3').offset().top - 200 || $(window).scrollTop() <= $('.slide-mobile3').offset().top + $('.slide-mobile3').height() - 400) && $(window).width() <= 620) {
+      $('.slide3-mobile-phone1').addClass('animate2-slide3-mobile-phone1');
+      $('.slide3-mobile-phone2').addClass('animate2-slide3-mobile-phone2');
+      $('.slide3-mobile-phone3').addClass('animate2-slide3-mobile-phone3');
+      $('.slide3-mobile-phone4').addClass('animate2-slide3-mobile-phone4');
+      $('.slide3-mobile-phone5').addClass('animate2-slide3-mobile-phone5');   
+    }
+    if ((($(window).scrollTop() <= $('.slide-mobile3').offset().top - 200 || $(window).scrollTop() >= $('.slide-mobile3').offset().top + $('.slide-mobile3').height() - 400) && $(window).width() <= 620) || $(window).width() > 620) {
+      $('.slide3-mobile-phone1').removeClass('animate2-slide3-mobile-phone1');
+      $('.slide3-mobile-phone2').removeClass('animate2-slide3-mobile-phone2');
+      $('.slide3-mobile-phone3').removeClass('animate2-slide3-mobile-phone3');
+      $('.slide3-mobile-phone4').removeClass('animate2-slide3-mobile-phone4');
+      $('.slide3-mobile-phone5').removeClass('animate2-slide3-mobile-phone5');     
+    }
+  }); 
+
 
 })()
