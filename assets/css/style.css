@@ -892,7 +892,7 @@ section {
   height: 100vh;
 }
 
-.swiper-container {
+.waterfall .swiper-container {
   width: 100%;
  
 }
@@ -938,7 +938,7 @@ section {
   transition: all 0.5s ease-in-out;
 }
 
-.swiper-slide:hover h2:before {
+.waterfall .swiper-slide:hover h2:before {
   visibility: visible;
   width: 100%;
 }
@@ -993,142 +993,142 @@ section {
 }
 
 
-.slide1-phone {
+.waterfall .slide1-phone {
   position: absolute;
   width: 16%;
   transition: 1s ease;
 }
-.slide1-phone1 {
+.waterfall .slide1-phone1 {
   top: -30%;
   left: 34%;
 }
-.slide1:hover .slide1-phone1 {
+.waterfall .slide1:hover .slide1-phone1 {
   top: -20%;
 }
-.slide1-phone2 {
+.waterfall .slide1-phone2 {
   top: 40%;
   left: 32%;
 }
-.slide1:hover .slide1-phone2 {
+.waterfall .slide1:hover .slide1-phone2 {
   top: 50%;
 }
-.slide1-phone3 {
+.waterfall .slide1-phone3 {
   top: -47%;
   left: 56%;
 }
-.slide1:hover .slide1-phone3 {
+.waterfall .slide1:hover .slide1-phone3 {
   top: -57%;
 }
-.slide1-phone4 {
+.waterfall .slide1-phone4 {
   top: 23%;
   left: 54%;
 }
-.slide1:hover .slide1-phone4 {
+.waterfall .slide1:hover .slide1-phone4 {
   top: 13%;
 }
-.slide1-phone5 {
+.waterfall .slide1-phone5 {
   top: 93%;
   left: 52%;
 }
-.slide1:hover .slide1-phone5 {
+.waterfall .slide1:hover .slide1-phone5 {
   top: 83%;
 }
-.slide1-phone6 {
+.waterfall .slide1-phone6 {
   top: -10%;
   right: 8%;
 }
-.slide1:hover .slide1-phone6 {
+.waterfall .slide1:hover .slide1-phone6 {
   top: 0%;
 }
-.slide1-phone7 {
+.waterfall .slide1-phone7 {
   top: 60%; 
   right: 10%;
 }
-.slide1:hover .slide1-phone7 {
+.waterfall .slide1:hover .slide1-phone7 {
   top: 70%; 
 }
 
 
-.slide2-phone {
+.waterfall .slide2-phone {
   position: absolute;
   bottom: 0;
   margin-bottom: -50px;
   transition: 1s ease;
 }
-.slide2-phone1 {
+.waterfall .slide2-phone1 {
   right: 39%;
 }
-.slide2-phone2 {
+.waterfall .slide2-phone2 {
   right: 7%;
 }
-.slide2:hover .slide2-phone {
+.waterfall .slide2:hover .slide2-phone {
   margin-bottom: 0px;
 }
 
-.slide3-phone {
+.waterfall .slide3-phone {
   transform: rotate(40deg);
   position: absolute;
   width: 16%;
   transition: 1s ease;
 }
-.slide3-phone1 {
+.waterfall .slide3-phone1 {
   top: -10%;
   left: 43%;
 }
-.slide3:hover .slide3-phone1 {
+.waterfall .slide3:hover .slide3-phone1 {
   top: -17%;
   left: 45.8%;
 }
-.slide3-phone2 {
+.waterfall .slide3-phone2 {
   top: 90%;
   left: 23%;
 }
-.slide3:hover .slide3-phone2 {
+.waterfall .slide3:hover .slide3-phone2 {
   top: 68%;
   left: 34%; 
 }
-.slide3-phone3 {
+.waterfall .slide3-phone3 {
   top: 45%;
   right: 18%;
 }
-.slide3:hover .slide3-phone3 {
+.waterfall .slide3:hover .slide3-phone3 {
   top: 55%;
   right: 22%;
 }
-.slide3-phone4 {
+.waterfall .slide3-phone4 {
   top: 6%;
   left: 59%;
 }
-.slide3:hover .slide3-phone4 {
+.waterfall .slide3:hover .slide3-phone4 {
   top: 17%;
   left: 54.5%;
 }
-.slide3-phone5 {
+.waterfall .slide3-phone5 {
   top: -46%;
   right: 4%;
 }
-.slide3:hover .slide3-phone5 {
+.waterfall .slide3:hover .slide3-phone5 {
   top: -34%;
   right: 9%;
 }
 
 
-.slide4-swiper {
+.waterfall .slide4-swiper {
   position: absolute;
   top: 72px;
   right: 100px;
   width: 60%;
   height: 87%;
 }
-.slide4 .slider-img .swiper-slide {
+.waterfall .slide4 .slider-img .swiper-slide {
   background-color: transparent;
 }
-.slide4-swiper img {
+.waterfall .slide4-swiper img {
   margin-top: 2px;
   min-width: 240px;
   height: 88.5%;
 }
-.slide4-phone-frame {
+.waterfall .slide4-phone-frame {
   position: absolute;
   top: 60px;
   right: 28%;
@@ -1147,13 +1147,263 @@ section {
   .waterfall {
     display: none;
   }
+  .waterfall2 {
+    display: none !important;
+  }
   .waterfall-mobile {
     display: block !important;
   }
 } 
 
 /*--------------------------------------------------------------
-# Waterfall Slider
+# Waterfall Slider 2
+--------------------------------------------------------------*/
+
+.waterfall2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+}
+
+.waterfall2 .slide-test {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.waterfall2 .test-slider-info {
+  width: 25%;
+  height: 100%;
+  padding: 0 20px 0 30px;
+  background-color: rgb(20, 26, 41);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+  z-index: 1;
+}
+
+.waterfall2 .test-slider-info h2 {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  color: white;
+  background: linear-gradient(to left top, rgb(27, 141, 194), rgb(41, 165, 223), rgb(211, 222, 252));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 20px;
+  transform: translateY(-80px);
+  transition: 1s ease;
+}
+
+.waterfall2 .test-slider-info h2:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(218, 218, 218);
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.slide-test:hover h2:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.waterfall2 .test-slider-info p {
+  color: rgb(214, 214, 214);
+  font-size: 20px;
+  margin-top: 10px;
+  transform: translateY(-80px);
+  transition: 1s ease;
+}
+
+.waterfall2 .test-slider-info p i {
+  color:rgb(25, 130, 216);
+}
+
+.slide-test:hover .test-slider-info p {
+  transform: translateY(0px);
+}
+.slide-test:hover .test-slider-info h2 {
+  transform: translateY(0px);
+}
+
+
+.waterfall2 .slide-test:nth-child(1) {
+  background-color: rgb(146, 201, 252);
+}
+.waterfall2 .slide-test:nth-child(2) {
+  background-color:rgb(204, 255, 255);
+}
+.waterfall2 .slide-test:nth-child(3) {
+  background-color: rgb(43, 129, 199);
+}
+.waterfall2 .slide-test:nth-child(4) {
+  background-color: rgb(148, 176, 236);
+}
+
+.waterfall2 .test-slider-img {
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: 10%;
+}
+
+.slide1-test-phone {
+  position: relative;
+  width: 180px;
+  transition: 1s ease;
+  margin: 5px 10px;
+}
+.slide1-test-phone1 {
+  top: -150px;
+}
+.slide-test1:hover .slide1-test-phone1 {
+  top: -100px;
+}
+.slide1-test-phone2 {
+  top: -260px;
+}
+.slide-test1:hover .slide1-test-phone2 {
+  top: -310px;
+}
+.slide1-test-phone3 {
+  top: -100px;
+}
+.slide-test1:hover .slide1-test-phone3 {
+  top: -50px;
+}
+.slide1-test-phone4 {
+  top: -140px;
+  margin-left: -40px;
+}
+.slide-test1:hover .slide1-test-phone4 {
+  top: -90px;
+}
+.slide1-test-phone5 {
+  top: -260px;
+  left: 12.5px;
+}
+.slide-test1:hover .slide1-test-phone5 {
+  top: -310px;
+}
+.slide1-test-phone6 {
+  top: -90px;
+}
+.slide-test1:hover .slide1-test-phone6 {
+  top: -40px;
+}
+.slide1-test-phone7 {
+  top: -260px;
+  left: -25px;
+}
+.slide-test1:hover .slide1-test-phone7 {
+  top: -310px;
+}
+
+
+.slide2-test-phone {
+  position: relative;
+  bottom: 0;
+  margin-bottom: -50px;
+  transition: 1s ease;
+  width: 350px;
+}
+.slide2-test-phone1 {
+  bottom: -120px;
+}
+.slide2-test-phone2 {
+  bottom: -120px;
+}
+.slide-test2:hover .slide2-test-phone {
+  bottom: -80px;
+}
+
+.slide3-test-phone {
+  transform: rotate(40deg);
+  position: relative;
+  transition: 1s ease;
+  width: 200px;
+}
+.slide3-test-phone1 {
+  top: 90px;
+  left: -30px;
+}
+.slide-test3:hover .slide3-test-phone1 {
+  top: 20px;
+  left: 30px;
+}
+.slide3-test-phone2 {
+  top: -250px;
+  left: 340px;
+}
+.slide-test3:hover .slide3-test-phone2 {
+  top: -200px;
+  left: 300px;
+}
+.slide3-test-phone3 {
+  top: 270px;
+  left: -10px;
+}
+.slide-test3:hover .slide3-test-phone3 {
+  top: 200px;
+  left: 50px;
+}
+.slide3-test-phone4 {
+  top: -320px;
+  left: 180px;
+}
+.slide-test3:hover .slide3-test-phone4 {
+  top: -270px;
+  left: 140px;
+}
+.slide3-test-phone5 {
+  top: 92px;
+  left: -361px;
+}
+.slide-test3:hover .slide3-test-phone5 {
+  top: 42px;
+  left: -316px;
+}
+
+
+.slide4-test-swiper {
+  position: relative;
+  height: 100%;
+  top: 60px;
+  left: 13px;
+}
+.slide4 .test-slider-img .swiper-slide {
+  background-color: transparent;
+}
+.slide4-test-swiper img {
+  width: 189px;
+  height: 406px;
+}
+.slide4-test-phone-frame {
+  position: absolute;
+  width: 220px;
+  z-index: 2;
+}
+
+
+/*--------------------------------------------------------------
+# Waterfall Slider Mobile
 --------------------------------------------------------------*/
 
 .waterfall-mobile {
@@ -1163,7 +1413,7 @@ section {
   flex-direction: column;
   height: 100%;
   padding: 0;
-  display: none
+  display: none;
 }
 
 .slide-mobile {
@@ -1230,8 +1480,6 @@ section {
 .waterfall-mobile .mobile-swiper-info p i {
   color:rgb(25, 130, 216);
 }
-
-
 
 
 .waterfall-mobile .slide-mobile:nth-child(1) {
@@ -1341,13 +1589,13 @@ section {
   top: -90px;
   right: -48px;
 }
-.animate-slide3-mobile-phone2 {
+.animate1-slide3-mobile-phone2 {
   top: -30px;
   right: 0px;
 }
 .slide3-mobile-phone3 {
-  top: 120px;
-  right: 60px;
+  top: 60px;
+  right: 10px;
 }
 .animate1-slide3-mobile-phone3 {
   top: 120px;
@@ -1374,19 +1622,18 @@ section {
 .slide4-mobile-swiper {
   position: relative;
   height: 100%;
-  top: -50px;
+  top: -5px;
   left: -3px;
 }
 .slide4 .mobile-slider-img .swiper-slide {
   background-color: transparent;
 }
 .slide4-mobile-swiper img {
-  width: 190px;
+  width: 189px;
   height: 405px;
 }
 .slide4-mobile-phone-frame {
   position: absolute;
-  bottom: 150px;
   width: 220px;
   z-index: 2;
 }
@@ -1462,8 +1709,25 @@ section {
     top: 30px;
     left: -115px;
   }
+
   .slide4-mobile-swiper {
-    min-width: 600px;
+    position: relative;
+    height: 100%;
+    top: -5px;
+    left: -1px;
+    min-width: 500px;
+  }
+  .slide4 .mobile-slider-img .swiper-slide {
+    background-color: transparent;
+  }
+  .slide4-mobile-swiper img {
+    width: 150px;
+    height: 312px;
+  }
+  .slide4-mobile-phone-frame {
+    position: absolute;
+    width: 170px;
+    z-index: 2;
   }
 }
 
@@ -1507,13 +1771,12 @@ section {
   top: 20px;
   left: -105px;
 }
+
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
 
 .features {
-  margin-top: -100px;
-  padding-top: 200px;
   background-color: #141A29;
 }
 .features .section-title h2 {
@@ -1537,6 +1800,88 @@ section {
   width: 90%;
   margin-left: 4%;
 }
+
+/*--------------------------------------------------------------
+# Blogs
+--------------------------------------------------------------*/
+
+
+.blogs .row .col-lg-3 .blog-img {
+  height: 200px; 
+  background-image: url(https://images.pexels.com/photos/310983/pexels-photo-310983.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500); 
+  background-size: cover; 
+  background-position: center;
+  transition: 1s ease;
+}
+.blogs .row .col-lg-3 .blog-date {
+  top:10px; 
+  right:10px; 
+  width: 70px; 
+  height: 70px; 
+  background-color: #116cd3;
+}
+.blogs .row .col-lg-3 .blog-read-more {
+  bottom:10px; 
+  left: 10px; 
+  background-color: #116cd3;
+}
+.blogs .row .col-lg-3 .blog-heading {
+  font-weight: 600; 
+  font-size: 1.1rem; 
+  margin-bottom: 0;
+}
+.blogs .row .col-lg-3 .blog-read-time {
+  color: #116cd3; 
+  margin-left: 5px; 
+  margin-bottom: 3px; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.blogs .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.button::before,
+.button::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.button--dione {
+	background: none;
+	font-family: obvia, sans-serif;
+	font-weight: 500;
+	padding: 1.5rem 3rem;
+}
+.button--dione span {
+	display: inline-block;
+	position: relative;
+	color: #fff;
+}
+.button--dione::before {
+	content: '';
+	background: #116cd3;
+	transition: transform 0.3s cubic-bezier(0.2,1,0.7,1);
+}
+.button--dione:hover::before {
+	transform: scale3d(0.9, 0.8, 1);
+}
+.button--dione::after {
+	content: '';
+	border: 1px solid #116cd3;
+	transition: transform 0.3s cubic-bezier(0.2,1,0.7,1);
+	border-radius: 0px;
+	transform: scale3d(0.85, 0.65, 1);
+}
+.button--dione:hover::after {
+	transform: scale3d(1,1,1);
+}
+
 
 /*--------------------------------------------------------------
 # Contact Us

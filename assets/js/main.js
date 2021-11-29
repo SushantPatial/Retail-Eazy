@@ -319,6 +319,22 @@
     },
   });
 
+  let swiper4 = new Swiper(".slide4-test-swiper", {
+    loop: true,
+    simulateTouch: false,
+    slidesPerView: 3,
+    centeredSlides: true,
+    spaceBetween: 30,
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+    },
+    pagination: {
+      el: ".swiper-pagination2",
+      clickable: true,
+    },
+  });
+
   $(document).scroll(function() {
     var y = $(this).scrollTop();
     if (y > 2500 && y <  3100 && window.innerWidth > 1200) {
@@ -342,6 +358,9 @@
       $(".features-img").removeClass("features-img-mobile");
     }
   });
+
+
+  
 
   // For tablets
   $(window).scroll(function(){
