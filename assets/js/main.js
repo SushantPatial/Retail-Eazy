@@ -196,7 +196,7 @@
   var ch = 0;
   let timer;
 
-  // Implements typing effect
+  /* Implements typing effect
   function Type() { 
     var text =  words[i].substring(0, ch + 1);
     document.querySelector("#word").innerHTML = text;
@@ -237,7 +237,7 @@
   }
 
   timer = setInterval(Type, 100);
-
+ */
   /**
    * Services  slider
    */
@@ -352,15 +352,63 @@
     if ($(window).width() < 700) {
       $(".features-img").attr("src","assets/images/features-mobile.png");
       $(".features-img").addClass("features-img-mobile");
+      $("#vid").addClass("hero-vid-mobile");
     }
     else {
       $(".features-img").attr("src","assets/images/features.png");
       $(".features-img").removeClass("features-img-mobile");
+      $("#vid").removeClass("hero-vid-mobile");
     }
   });
 
+  if ($(window).width() < 700) {
+    $("#vid").addClass("hero-vid-mobile");
+  }
+  else {
+    $("#vid").removeClass("hero-vid-mobile");
+  }
 
-  
+
+  var w = window.matchMedia("(max-width: 700px)");
+  var vid = document.getElementById("vid");
+  var source = document.createElement("source");
+  source.id = "hvid";
+  source.setAttribute("type", "video/mp4");
+  vid.appendChild(source);
+
+  if (w.matches) {
+    vid.pause();
+    source.removeAttribute("src");
+    source.setAttribute("src", "assets/images/hero-bg-mobile.mp4");
+    vid.load();
+    vid.play();
+  } else {
+    vid.pause();
+    source.removeAttribute("src");
+    source.setAttribute("src", "assets/images/hero-bg-crop.mp4");
+    vid.load();
+    vid.play();
+  }
+
+  window.addEventListener("resize", function(){
+  var w = window.matchMedia("(max-width: 700px)");
+  var vid = document.getElementById("vid");
+  var source = document.getElementById("hvid");
+
+  if (w.matches) {
+    vid.pause();
+    source.src = "assets/images/hero-bg-mobile.mp4";
+    vid.load();
+    vid.play();
+  } else {
+    vid.pause();
+    source.src = "assets/images/hero-bg-crop.mp4";
+    vid.load();
+    vid.play();
+  }
+  });
+
+
 
   // For tablets
   $(window).scroll(function(){
