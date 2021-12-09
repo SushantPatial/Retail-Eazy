@@ -268,25 +268,7 @@
   });
 
   
-  let swiper = new Swiper(".swiper-container", {
-    direction: "vertical",
-    slidesPerView: 1,
-    speed: 2000,
-    preventInteractionOnTransition: true,
-    mousewheel: {
-      releaseOnEdges: true,
-      sensitivity: 10,
-      eventsTarget: '.swiper-container',
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      type: "progressbar",
-      clickable: true,
-    },
-    
-  });
-
-  let swiper2 = new Swiper(".slide4-swiper", {
+  let swiper1 = new Swiper(".slide4-test-swiper", {
     loop: true,
     simulateTouch: false,
     slidesPerView: 3,
@@ -301,9 +283,8 @@
       clickable: true,
     },
   });
-
   
-  let swiper3 = new Swiper(".slide4-mobile-swiper", {
+  let swiper2 = new Swiper(".slide4-mobile-swiper", {
     loop: true,
     simulateTouch: false,
     slidesPerView: 3,
@@ -319,33 +300,6 @@
     },
   });
 
-  let swiper4 = new Swiper(".slide4-test-swiper", {
-    loop: true,
-    simulateTouch: false,
-    slidesPerView: 3,
-    centeredSlides: true,
-    spaceBetween: 30,
-    speed: 1000,
-    autoplay: {
-      delay: 2000,
-    },
-    pagination: {
-      el: ".swiper-pagination2",
-      clickable: true,
-    },
-  });
-
-  $(document).scroll(function() {
-    var y = $(this).scrollTop();
-    if (y > 2500 && y <  3100 && window.innerWidth > 1200) {
-      $(".waterfall").addClass("water-fixed");
-      $("#header").fadeOut();
-    } 
-    else {
-      $(".waterfall").removeClass("water-fixed");
-      $("#header").fadeIn();
-    }
-  });
 
 
   $( window ).resize(function() {
@@ -409,6 +363,47 @@
   });
 
 
+  // For desktops
+  $(window).scroll(function(){
+    if (($(window).scrollTop() >= $('.slide-test1').offset().top - 200 || $(window).scrollTop() <= $('.slide-test1').offset().top + $('.slide-test1').height() - 400) && $(window).width() > 1200) {
+      $('.slide1-test-phone1').addClass('animate-slide1-test-phone1');
+      $('.slide1-test-phone2').addClass('animate-slide1-test-phone2');
+      $('.slide1-test-phone3').addClass('animate-slide1-test-phone3');
+      $('.slide1-test-phone4').addClass('animate-slide1-test-phone4');
+      $('.slide1-test-phone5').addClass('animate-slide1-test-phone5');
+      $('.slide1-test-phone6').addClass('animate-slide1-test-phone6'); 
+    }
+    if (($(window).scrollTop() <= $('.slide-test1').offset().top - 200 || $(window).scrollTop() >= $('.slide-test1').offset().top + $('.slide-test1').height() - 400) && $(window).width() > 1200) {
+      $('.slide1-test-phone1').removeClass('animate-slide1-test-phone1');
+      $('.slide1-test-phone2').removeClass('animate-slide1-test-phone2');
+      $('.slide1-test-phone3').removeClass('animate-slide1-test-phone3');
+      $('.slide1-test-phone4').removeClass('animate-slide1-test-phone4');
+      $('.slide1-test-phone5').removeClass('animate-slide1-test-phone5');
+      $('.slide1-test-phone6').removeClass('animate-slide1-test-phone6');        
+    }
+
+    if (($(window).scrollTop() >= $('.slide-test2').offset().top - 200 || $(window).scrollTop() <= $('.slide-test2').offset().top + $('.slide-test2').height() - 400) && $(window).width() > 1200) {
+      $('.slide2-test-phone').addClass('animate-slide2-test-phone');      
+    }
+    if (($(window).scrollTop() <= $('.slide-test2').offset().top - 200 || $(window).scrollTop() >= $('.slide-test2').offset().top + $('.slide-test2').height() - 400) && $(window).width() > 1200) {
+      $('.slide2-test-phone').removeClass('animate-slide2-test-phone');   
+    }
+
+    if (($(window).scrollTop() >= $('.slide-test3').offset().top - 200 || $(window).scrollTop() <= $('.slide-test3').offset().top + $('.slide-test3').height() - 400) && $(window).width() > 1200) {
+      $('.slide3-test-phone1').addClass('animate-slide3-test-phone1');
+      $('.slide3-test-phone2').addClass('animate-slide3-test-phone2');
+      $('.slide3-test-phone3').addClass('animate-slide3-test-phone3');
+      $('.slide3-test-phone4').addClass('animate-slide3-test-phone4');
+      $('.slide3-test-phone5').addClass('animate-slide3-test-phone5');   
+    }
+    if (($(window).scrollTop() <= $('.slide-test3').offset().top - 200 || $(window).scrollTop() >= $('.slide-mobiltest3e3').offset().top + $('.slide-test3').height() - 400) && $(window).width() > 1200) {
+      $('.slide3-test-phone1').removeClass('animate-slide3-test-phone1');
+      $('.slide3-test-phone2').removeClass('animate-slide3-test-phone2');
+      $('.slide3-test-phone3').removeClass('animate-slide3-test-phone3');
+      $('.slide3-test-phone4').removeClass('animate-slide3-test-phone4');
+      $('.slide3-test-phone5').removeClass('animate-slide3-test-phone5');     
+    }
+  });
 
   // For tablets
   $(window).scroll(function(){
