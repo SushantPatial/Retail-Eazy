@@ -1053,6 +1053,29 @@ section {
   bottom: -80px;
 }
 
+@media screen and (min-height: 675px) {
+  .slide2-test-phone1 {
+    bottom: -160px;
+  }
+  .slide2-test-phone2 {
+    bottom: -160px;
+  }
+  .animate-slide2-test-phone {
+    bottom: -120px;
+  }
+}
+@media screen and (min-height: 750px) {
+  .slide2-test-phone1 {
+    bottom: -200px;
+  }
+  .slide2-test-phone2 {
+    bottom: -200px;
+  }
+  .animate-slide2-test-phone {
+    bottom: -160px;
+  }
+}
+
 .slide3-test-phone {
   transform: rotate(40deg);
   position: relative;
@@ -1102,10 +1125,8 @@ section {
 
 
 .slide4-test-swiper {
-  position: relative;
-  height: 100%;
-  top: 60px;
-  left: 13px;
+  margin-left: 15px;
+  margin-top: -10px;
 }
 .slide4 .test-slider-img .swiper-slide {
   background-color: transparent;
@@ -1779,19 +1800,34 @@ section {
   color: rgb(25, 130, 216);
 }
 
+#contact .other-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+#contact .other-icons img {
+  width: 42px;
+  margin: 0 5px;
+  transition: 0.5s ease;
+}
+#contact .other-icons img:hover {
+  transform: scale(0.9);
+}
+
 #contact .footer-icons {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#contact .footer-icons a{
+#contact .footer-icons a {
   color: white;
 }
 #contact .footer-icon {
   border-radius: 50%;
   width: 42px;
   height: 42px;
-  margin: 0 12px 0 0;
+  margin: 0 5px;
   transition: 0.5s ease;
 }
 #contact .footer-icon:hover {

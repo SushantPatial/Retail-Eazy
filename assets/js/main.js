@@ -372,6 +372,7 @@
       $('.slide1-test-phone4').addClass('animate-slide1-test-phone4');
       $('.slide1-test-phone5').addClass('animate-slide1-test-phone5');
       $('.slide1-test-phone6').addClass('animate-slide1-test-phone6'); 
+      $('.slide1-test-phone7').addClass('animate-slide1-test-phone7'); 
     }
     if (($(window).scrollTop() <= $('.slide-test1').offset().top - 200 || $(window).scrollTop() >= $('.slide-test1').offset().top + $('.slide-test1').height() - 400) && $(window).width() > 1200) {
       $('.slide1-test-phone1').removeClass('animate-slide1-test-phone1');
@@ -379,7 +380,8 @@
       $('.slide1-test-phone3').removeClass('animate-slide1-test-phone3');
       $('.slide1-test-phone4').removeClass('animate-slide1-test-phone4');
       $('.slide1-test-phone5').removeClass('animate-slide1-test-phone5');
-      $('.slide1-test-phone6').removeClass('animate-slide1-test-phone6');        
+      $('.slide1-test-phone6').removeClass('animate-slide1-test-phone6');       
+      $('.slide1-test-phone7').removeClass('animate-slide1-test-phone7');  
     }
 
     if (($(window).scrollTop() >= $('.slide-test2').offset().top - 200 || $(window).scrollTop() <= $('.slide-test2').offset().top + $('.slide-test2').height() - 400) && $(window).width() > 1200) {
@@ -396,7 +398,7 @@
       $('.slide3-test-phone4').addClass('animate-slide3-test-phone4');
       $('.slide3-test-phone5').addClass('animate-slide3-test-phone5');   
     }
-    if (($(window).scrollTop() <= $('.slide-test3').offset().top - 200 || $(window).scrollTop() >= $('.slide-mobiltest3e3').offset().top + $('.slide-test3').height() - 400) && $(window).width() > 1200) {
+    if (($(window).scrollTop() <= $('.slide-test3').offset().top - 200 || $(window).scrollTop() >= $('.slide-test3').offset().top + $('.slide-test3').height() - 400) && $(window).width() > 1200) {
       $('.slide3-test-phone1').removeClass('animate-slide3-test-phone1');
       $('.slide3-test-phone2').removeClass('animate-slide3-test-phone2');
       $('.slide3-test-phone3').removeClass('animate-slide3-test-phone3');
