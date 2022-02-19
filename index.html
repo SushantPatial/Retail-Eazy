@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/images/RetailEazyHighResolutionICON.png" rel="icon">
+  <link href="assets/images/favicon.ico" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -20,12 +20,13 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
   <!-- CSS Files -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/stats.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
 
 </head>
 
@@ -35,7 +36,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
-      <h1 class="logo me-auto"><a href="index.html"><img src="assets/images/RetailEazyHighResolutionICON.png"></a></h1>
+      <div class="logo me-auto"><a href="index.html"><img src="assets/images/RetailEazyHighResolutionICON.png"></a></div>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
@@ -54,6 +55,8 @@
           <li><a href="https://apps.apple.com/us/app/retail-eazy/id1550577652"><img src="assets/images/IOS.png"></a></li>
         </ul>
       </div>
+
+      <a href="#contact" class="scrollto book-demo">Book a demo</a>
     </div>
   </header><!-- End Header -->
   
@@ -73,12 +76,12 @@
   <!--   <div class="block">
         <span style="color: rgb(255, 255, 255); font-size: 20px;">End of </span><span class="header-sub-title"><span class="header-sub-title" id="word"></span><span class="header-sub-title blink">|</span></span>
       </div> --> 
-      <a href="#contact" class="btn-get-started">FREE PRODUCT TOUR</a>
+      <a href="#contact" class="scrollto btn-get-started">FREE PRODUCT TOUR</a>
     </div>
    
   </section><!-- End Hero -->
 
-  <a href="#contact"><button class="book-demo-btn">Book your demo!</button></a>
+  <a href="#contact" class="scrollto"><button class="book-demo-btn">Book your demo!</button></a>
 
   <main id="main">
 
@@ -94,8 +97,8 @@
                   <h2>Why <img src="assets/images/Retail Eazy Inverse.png"> <span>?</span></h2>
                 </div>
                 <img class="about-logo" src="assets/images/RetailEazyHighResolutionICON.png">
-                <img style="margin-top:-160px; width: 230px; margin-bottom: 20px;" src="https://www.transparentpng.com/thumb/shadow/iuqEeA-shadow-png-pic-controlled-drugs-cabinets-from-pharmacy.png">
-                <a href="#contact" class="about-btn"><span>FREE PRODUCT TOUR</span> <i class="bx bx-chevron-right"></i></a>
+                <img style="margin-top:-160px; width: 230px; margin-bottom: 20px;" src="assets/images/shadow.png">
+                <a href="#contact" class="scrollto about-btn"><span>FREE PRODUCT TOUR</span> <i class="bx bx-chevron-right"></i></a>
               </div>
             </div>
             <div class="col-xl-7 d-flex align-items-stretch">
@@ -142,26 +145,17 @@
             <img class="tablet" src="assets/images/tablet.png">
           </div>
           <div class="videos">
-            <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+            <a href="https://www.youtube.com/watch?v=s0ty0LRryNU" class="video-lightbox">
               <img class="video1-thumb" src="assets/images/video-thumb-1.webp">
-            </div>
-            <div style="display:none">
-              <iframe id="video1" class="video1" src="https://www.youtube.com/embed/s0ty0LRryNU?autoplay=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-            </div>
+            </a>
 
-            <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+            <a href="https://www.youtube.com/watch?v=wsGZB63xW3U" class="video-lightbox">
               <img class="video2-thumb" src="assets/images/video-thumb-2.webp">
-            </div>
-            <div style="display:none">
-              <iframe id="video2" class="video2" src="https://www.youtube.com/embed/wsGZB63xW3U?autoplay=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-            </div>
+            </a>
 
-            <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+            <a href="https://www.youtube.com/watch?v=4siwYXYZbEQ" class="video-lightbox">
               <img class="video3-thumb" src="assets/images/video-thumb-3.webp">
-            </div>
-            <div style="display:none">
-              <iframe id="video3" class="video3" src="https://www.youtube.com/embed/4siwYXYZbEQ?autoplay=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-            </div>
+            </a>
 
           </div>
         </div>
@@ -447,13 +441,15 @@
                 <div id="particles-js">
                   <canvas class="particles-js-canvas-el" width="410" height="380" style="width: 100%; height: 100%;">
                 </div>
-                <span class="years"><div class="counting" data-count="14">0</div></span>
+                <span class="years"><div class="counting" data-count="15">0</div></span>
               </div>
           
               <div class="experience">
                 <h2>Years of Excellence</h2>
                 <h6>EAZY Business Solutions was incorporated in 2007 with a vision to provide best IT Service solution via its bouquet of products like Eazy ERP, Eazy DMS, Eazy CRM, Retail Eazy to name a few.</h6>
-                <button class="button button--mimas"><span>Know More</span></button>
+                <a href="company.html">
+                  <button class="button button--mimas"><span>Know More</span></button>
+                </a>
               </div>
             </div>
       
@@ -499,7 +495,86 @@
           <div class="section-title" data-aos="fade-up">
             <h2>Retail Eazy - Multi App</h2>
           </div>
-        </section><!-- End of Multi App Section -->
+          
+          <div class="container">
+            <div class="row">
+    
+              <div class="col-lg-3">
+                <div class="multi-box">
+                  <div class="multi-icon">
+                    <i class="fal fa-mobile"></i>
+                  </div>
+                  <h6>Single App for Distributors Dealing in Multiple Brand</h6>
+                </div>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="multi-box">
+                  <div class="multi-icon">
+                    <i class="fal fa-calendar-edit"></i>
+                  </div>
+                  <h6>Stay up to date with Change in Market Buying Habits</h6>
+                </div>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="multi-box">
+                  <div class="multi-icon">
+                    <i class="fal fa-hand-holding-heart"></i>
+                  </div>
+                  <h6>Bette​r​ Usability/ Adaptability/ Spreadability</h6>
+                </div>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="multi-box">
+                  <div class="multi-icon">
+                    <i class="fal fa-link"></i>
+                  </div>
+                  <h6>Increase in Engagement with Distributors Run</h6>
+                </div>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="multi-box">
+                  <div class="multi-icon">
+                    <i class="fal fa-handshake"></i>
+                  </div>
+                  <h6>Multiple Brand have Multiple App for Distributors</h6>
+                </div>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="multi-box">
+                  <div class="multi-icon">
+                    <i class="fal fa-bell-on"></i>
+                  </div>
+                  <h6>Offers/ Census/ Surveys/ Notifications</h6>
+                </div>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="multi-box">
+                  <div class="multi-icon">
+                    <i class="fal fa-database"></i>
+                  </div>
+                  <h6>Less Data Consumption of Internet</h6>
+                </div>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="multi-box">
+                  <div class="multi-icon">
+                    <i class="fal fa-shield-check"></i>
+                  </div>
+                  <h6>More Security</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+      
+        </section>
 
     </div>
 
@@ -507,135 +582,80 @@
         <!-- Blogs Section -->
         <section class="blogs" style="padding: 0;">
           <div class="container my-5">
+
             <div class="section-title" data-aos="fade-up">
               <h2>Recent Blogs</h2>
             </div>
+
             <div class="row">
-              <div class="col-lg-3 col-md-6 p-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+
+              <div class="col-lg-3 col-md-6 p-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <div class="border">
                   <div class="blog-img position-relative w-100">
                     <div class="blog-date position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle">
-                      <small>27</small>
-                      <small><b>NOV</b></small>
+                      <small>APR</small>
+                      <b style="margin-top:-5px;">2020</b>
                     </div>
-                    <a href="#" class="blog-read-more position-absolute px-3 py-2 text-white"><small>READ MORE</small></a>
+                    <a href="blogs/right-approach-to-dms.html" class="blog-read-more position-absolute px-3 py-2 text-white"><small>READ MORE</small></a>
                   </div>
                   <div class="px-3 pt-4 pb-3">
-                    <a href="#" class="d-inline-block"><h4 class="blog-heading text-dark">Lorem ipsum dolor sit amet.</h4></a>
-                    <p class="tex-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aspernatur numquam, quod nulla...</p>
-                    <div class="d-flex mt-4">
-                      <div class="d-flex align-items-center mr-4">
-                        <svg height="16px" class="mr-2" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                          viewBox="0 0 300.988 300.988" style="enable-background:new 0 0 300.988 300.988;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M150.494,0.001C67.511,0.001,0,67.512,0,150.495s67.511,150.493,150.494,150.493s150.494-67.511,150.494-150.493
-                              S233.476,0.001,150.494,0.001z M150.494,285.987C75.782,285.987,15,225.206,15,150.495S75.782,15.001,150.494,15.001
-                              s135.494,60.782,135.494,135.493S225.205,285.987,150.494,285.987z"/>
-                            <polygon points="142.994,142.995 83.148,142.995 83.148,157.995 157.994,157.995 157.994,43.883 142.994,43.883 		"/>
-                          </g>
-                        </svg>
-                        <small class="blog-read-time mt-1">6 - 10 mins read</small>
-                      </div>
-                    </div>
+                    <a href="blogs/right-approach-to-dms.html" class="d-inline-block"><h4 class="blog-heading text-dark">Right Approach To DMS</h4></a>
+                    <p class="tex-secondary pt-1">With the ever changing market dynamics, businesses are evolving every minute to stay relevant. In an increasingly competitive ...</p>
                   </div>
                 </div>
               </div>
               
-              <div class="col-lg-3 col-md-6 p-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              <div class="col-lg-3 col-md-6 p-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                 <div class="border">
                   <div class="blog-img position-relative w-100">
                     <div class="blog-date position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle">
-                      <small>27</small>
-                      <small><b>NOV</b></small>
+                      <small>NOV</small>
+                      <b style="margin-top:-5px;">2019</b>
                     </div>
-                    <a href="#" class="blog-read-more position-absolute px-3 py-2 text-white"><small>READ MORE</small></a>
+                    <a href="blogs/dms-crm.html" class="blog-read-more position-absolute px-3 py-2 text-white"><small>READ MORE</small></a>
                   </div>
                   <div class="px-3 pt-4 pb-3">
-                    <a href="#" class="d-inline-block"><h4 class="blog-heading text-dark">Lorem ipsum dolor sit amet.</h4></a>
-                    <p class="tex-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aspernatur numquam, quod nulla...</p>
-                    <div class="d-flex mt-4">
-                      <div class="d-flex align-items-center mr-4">
-                        <svg height="16px" class="mr-2" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                          viewBox="0 0 300.988 300.988" style="enable-background:new 0 0 300.988 300.988;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M150.494,0.001C67.511,0.001,0,67.512,0,150.495s67.511,150.493,150.494,150.493s150.494-67.511,150.494-150.493
-                              S233.476,0.001,150.494,0.001z M150.494,285.987C75.782,285.987,15,225.206,15,150.495S75.782,15.001,150.494,15.001
-                              s135.494,60.782,135.494,135.493S225.205,285.987,150.494,285.987z"/>
-                            <polygon points="142.994,142.995 83.148,142.995 83.148,157.995 157.994,157.995 157.994,43.883 142.994,43.883 		"/>
-                          </g>
-                        </svg>
-                        <small class="blog-read-time mt-1">6 - 10 mins read</small>
-                      </div>
-                    </div>
+                    <a href="blogs/dms-crm.html" class="d-inline-block"><h4 class="blog-heading text-dark">Enhance the Power of Distributor Management Software with CRM Integration</h4></a>
+                    <p class="tex-secondary pt-1">Distributor Management System (DMS) has become an integral...</p>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-3 col-md-6 p-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+              <div class="col-lg-3 col-md-6 p-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                 <div class="border">
                   <div class="blog-img position-relative w-100">
                     <div class="blog-date position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle">
-                      <small>27</small>
-                      <small><b>NOV</b></small>
+                      <small>JUN</small>
+                      <b style="margin-top:-5px;">2019</b>
                     </div>
-                    <a href="#" class="blog-read-more position-absolute px-3 py-2 text-white"><small>READ MORE</small></a>
+                    <a href="blogs/how-technology-fmcg.html" class="blog-read-more position-absolute px-3 py-2 text-white"><small>READ MORE</small></a>
                   </div>
                   <div class="px-3 pt-4 pb-3">
-                    <a href="#" class="d-inline-block"><h4 class="blog-heading text-dark">Lorem ipsum dolor sit amet.</h4></a>
-                    <p class="tex-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aspernatur numquam, quod nulla...</p>
-                    <div class="d-flex mt-4">
-                      <div class="d-flex align-items-center mr-4">
-                        <svg height="16px" class="mr-2" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                          viewBox="0 0 300.988 300.988" style="enable-background:new 0 0 300.988 300.988;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M150.494,0.001C67.511,0.001,0,67.512,0,150.495s67.511,150.493,150.494,150.493s150.494-67.511,150.494-150.493
-                              S233.476,0.001,150.494,0.001z M150.494,285.987C75.782,285.987,15,225.206,15,150.495S75.782,15.001,150.494,15.001
-                              s135.494,60.782,135.494,135.493S225.205,285.987,150.494,285.987z"/>
-                            <polygon points="142.994,142.995 83.148,142.995 83.148,157.995 157.994,157.995 157.994,43.883 142.994,43.883 		"/>
-                          </g>
-                        </svg>
-                        <small class="blog-read-time mt-1">6 - 10 mins read</small>
-                      </div>
-                    </div>
+                    <a href="blogs/how-technology-fmcg.html" class="d-inline-block"><h4 class="blog-heading text-dark">How Technology is Steering the FMCG Sector</h4></a>
+                    <p class="tex-secondary pt-1">Over the recent years, we have witnessed a marked increase in the entry of new players in F&B and consumer...</p>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-3 col-md-6 p-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+              <div class="col-lg-3 col-md-6 p-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                 <div class="border">
                   <div class="blog-img position-relative w-100">
                     <div class="blog-date position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle">
-                      <small>27</small>
-                      <small><b>NOV</b></small>
+                      <small>MAR</small>
+                      <b style="margin-top:-5px;">2019</b>
                     </div>
-                    <a href="#" class="blog-read-more position-absolute px-3 py-2 text-white"><small>READ MORE</small></a>
+                    <a href="blogs/saas-vs-onprem.html" class="blog-read-more position-absolute px-3 py-2 text-white"><small>READ MORE</small></a>
                   </div>
                   <div class="px-3 pt-4 pb-3">
-                    <a href="#" class="d-inline-block"><h4 class="blog-heading text-dark">Lorem ipsum dolor sit amet.</h4></a>
-                    <p class="tex-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aspernatur numquam, quod nulla...</p>
-                    <div class="d-flex mt-4">
-                      <div class="d-flex align-items-center mr-4">
-                        <svg height="16px" class="mr-2" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                          viewBox="0 0 300.988 300.988" style="enable-background:new 0 0 300.988 300.988;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M150.494,0.001C67.511,0.001,0,67.512,0,150.495s67.511,150.493,150.494,150.493s150.494-67.511,150.494-150.493
-                              S233.476,0.001,150.494,0.001z M150.494,285.987C75.782,285.987,15,225.206,15,150.495S75.782,15.001,150.494,15.001
-                              s135.494,60.782,135.494,135.493S225.205,285.987,150.494,285.987z"/>
-                            <polygon points="142.994,142.995 83.148,142.995 83.148,157.995 157.994,157.995 157.994,43.883 142.994,43.883 		"/>
-                          </g>
-                        </svg>
-                        <small class="blog-read-time mt-1">6 - 10 mins read</small>
-                      </div>
-                    </div>
+                    <a href="blogs/saas-vs-onprem.html" class="d-inline-block"><h4 class="blog-heading text-dark">SaaS or On-Premise DMS? Which one is better for you?</h4></a>
+                    <p class="tex-secondary pt-1">In the era of industry 4.0, businesses are making a continuous effort to be in a digitally connected...</p>
                   </div>
                 </div>
               </div>
             </div>
-            <button class="button button--dione"><span>More Blogs</span></button>
+            <a href="blogs/blogs.html">
+              <button class="button button--dione"><span>More Blogs</span></button>
+            </a>
           </div>
         </section><!-- End of Blogs Section -->
       </div>
@@ -853,7 +873,7 @@
         <div class="row">
 
           <div class="col-lg-2 col-md-4 footer-logo container2">
-            <a href="#">
+            <a href="#" class="scrollto">
               <img src="assets/images/RetailEazyHighResolutionICON.png">
             </a>
           </div>
@@ -862,16 +882,16 @@
             <h3>USEFUL LINKS</h3>
             <div class="useful-links">
               <ul class="">
-                <li><i class="fas fa-chevron-right"></i> <a href="#hero">Home</a></li>
-                <li><i class="fas fa-chevron-right"></i> <a href="#about">About us</a></li>
-                <li><i class="fas fa-chevron-right"></i> <a href="#video">video</a></li>
-                <li><i class="fas fa-chevron-right"></i> <a href="#services">Services</a></li>
+                <li><i class="fas fa-chevron-right"></i> <a href="#hero" class="scrollto">Home</a></li>
+                <li><i class="fas fa-chevron-right"></i> <a href="#about" class="scrollto">About us</a></li>
+                <li><i class="fas fa-chevron-right"></i> <a href="#video" class="scrollto">Video</a></li>
+                <li><i class="fas fa-chevron-right"></i> <a href="#services" class="scrollto">Services</a></li>
               </ul>
               <ul class="">
-                <li><i class="fas fa-chevron-right"></i> <a href="#features">Features</a></li>
-                <li><i class="fas fa-chevron-right"></i> <a href="#app">App</a></li>
-                <li><i class="fas fa-chevron-right"></i> <a href="#blogs">Apps</a></li>
-                <li><i class="fas fa-chevron-right"></i> <a href="#contact">Contact</a></li>
+                <li><i class="fas fa-chevron-right"></i> <a href="#features" class="scrollto">Features</a></li>
+                <li><i class="fas fa-chevron-right"></i> <a href="#app" class="scrollto">App</a></li>
+                <li><i class="fas fa-chevron-right"></i> <a href="blogs/blogs.html" class="scrollto">Blogs</a></li>
+                <li><i class="fas fa-chevron-right"></i> <a href="#contact" class="scrollto">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -881,7 +901,7 @@
             <h3>OTHER PRODUCTS</h3>
             <div class="other-icons">
               <a href="https://www.eazyerp.com/"><img src="assets/images/ERP.png"></a>
-              <a href="https://www.eazydms.com/"><img src="assets/images/RETAIL.png"></a>
+              <a href="https://www.eazydms.com/"><img src="assets/images/DMS.png"></a>
               <a href="https://www.eazyerp.com/eazy-crm.php"><img src="assets/images/CRM.png"></a>
               <a href="https://www.eazyerp.com/eazy-pay.php"><img src="assets/images/PAY.png"></a>
             </div>
@@ -910,22 +930,24 @@
 
     <div class="d-md-flex py-4" style="background-color: #020e27;">
       <div class="copyright">
-        &copy; Copyright <strong>Retail Eazy</strong> 2021. All Rights Reserved
+        &copy; Copyright <strong>Retail Eazy</strong> <span id='year'></span>. All Rights Reserved
       </div>
     </div>
   </footer>
   
-  <a href="#hero" class="back-to-top d-flex align-items-center justify-content-center"><i class="fas fa-arrow-up"></i></a>
+  <a href="#hero" class="back-to-top scrollto d-flex align-items-center justify-content-center"><i class="fas fa-arrow-up"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
   <!-- Particles.js and app.js -->
 	<script src="assets/js/particles.js"></script>
   <!-- JS Files -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/index.js"></script>
+  <script src="assets/js/header.js"></script>
 
 </body>
 
