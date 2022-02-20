@@ -117,6 +117,5 @@
       mirror: true
     })
 
-    $('#year').html(new Date().getFullYear());
   })
 

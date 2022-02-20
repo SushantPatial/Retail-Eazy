@@ -1222,6 +1222,39 @@
 } 
 
 /*--------------------------------------------------------------
+# Multi App
+--------------------------------------------------------------*/
+.multi .container {
+  position: relative;
+}
+.multi .col-lg-4 {
+  padding: 5px 0;
+}
+.multi .multi-box {
+  display: flex;
+  margin-bottom: 20px;
+  height: 100%;
+}
+.multi .multi-box .multi-icon {
+  min-width: 80px;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  color: #1577BD;
+  transition: 0.5s ease;
+}
+.multi .multi-box h6 {
+  color: #555;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.multi .multi-box:hover .multi-icon {
+  transform: translateY(10px);
+}
+
+/*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
 
@@ -1497,39 +1530,6 @@
   .sec-2 h5 {
     font-size: 14px;
   }
-}
-
-/*--------------------------------------------------------------
-# Multi App
---------------------------------------------------------------*/
-.multi .container {
-  position: relative;
-}
-.multi .col-lg-3 {
-  padding: 5px;
-}
-.multi .multi-box {
-  display: flex;
-  margin-bottom: 20px;
-  height: 100%;
-}
-
-.multi .multi-box .multi-icon {
-  min-width: 70px;
-  font-size: 36px;
-  display: flex;
-  justify-content: center;
-  color: #E03A3C;
-  transition: 0.5s ease;
-}
-.multi .multi-box h6 {
-  font-weight: 500;
-  font-size: 15px;
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
-.multi .multi-box:hover .multi-icon {
-  transform: translateY(15px);
 }
 
 /*--------------------------------------------------------------

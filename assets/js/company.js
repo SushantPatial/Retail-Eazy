@@ -1,4 +1,3 @@
-
 AOS.init();
 
 $('#team-carousel').carousel({
@@ -65,10 +64,7 @@ $('.image-upload-wrap').bind('dragover', function () {
     $('.image-upload-wrap').removeClass('image-dropping');
 });
 
-
-
 /* Life @ Eazy */
-
 $(document).ready(function() {
   let $grid = $('.portfolio-container').imagesLoaded( function() {
     $grid.isotope({
@@ -89,131 +85,114 @@ $(document).ready(function() {
 
 /** Initiate portfolio lightbox **/
 const portfolioLightbox1 = GLightbox({
-  selector: '.diwali-19-lightbox'
-});
-const portfolioLightbox2 = GLightbox({
-  selector: '.holi-19-lightbox'
-});
-const portfolioLightbox3 = GLightbox({
   selector: '.year-20-21-lightbox'
 });
-const portfolioLightbox4 = GLightbox({
+const portfolioLightbox2 = GLightbox({
   selector: '.year-18-19-lightbox'
 });
-const portfolioLightbox5 = GLightbox({
+const portfolioLightbox3 = GLightbox({
   selector: '.year-17-18-lightbox'
 });
-const portfolioLightbox6 = GLightbox({
+const portfolioLightbox4 = GLightbox({
   selector: '.hanuwantiya-lightbox'
 });
-const portfolioLightbox7 = GLightbox({
+const portfolioLightbox5 = GLightbox({
   selector: '.fortune-orange-lightbox'
 });
-const portfolioLightbox8 = GLightbox({
+const portfolioLightbox6 = GLightbox({
   selector: '.golden-tulip-lightbox'
 });
-const portfolioLightbox9 = GLightbox({
+const portfolioLightbox7 = GLightbox({
   selector: '.rishikesh-lightbox'
+});
+const portfolioLightbox8 = GLightbox({
+  selector: '.diwali-lightbox'
+});
+const portfolioLightbox9 = GLightbox({
+  selector: '.holi-lightbox'
+});
+const portfolioLightbox10 = GLightbox({
+  selector: '.christmas-lightbox'
+});
+const portfolioLightbox11 = GLightbox({
+  selector: '.training-lightbox'
 });
 
 $(window).on('load', function() {
   $('.portfolio-container').isotope('reloadItems').isotope();
 })
 
+$('.toggler').on('click', function() {
+  let masonryWrapper = $(this).attr('id').replace('-toggler', '');
+  setTimeout(function() {
+    $("#" + masonryWrapper + " .masonry-wrapper").css({
+      'opacity': '1',
+      'transform': 'scale(1)'
+    });
+  }, 100)
+})
+
 $('#year-20-21-toggler').on('click', function() {
-  $('#year-20-21').toggle();
-  $('#year-18-19').hide();
-  $('#year-17-18').hide();
-  $('.portfolio-container').isotope('reloadItems').isotope();
+  $('#year-20-21').show();
 })
 $('#year-18-19-toggler').on('click', function() {
-  $('#year-18-19').toggle();
-  $('#year-20-21').hide();
-  $('#year-17-18').hide();
-  $('#year-18-19').addClass('window-resize');
-  $('.portfolio-container').isotope('reloadItems').isotope();
+  $('#year-18-19').show();
 })
 $('#year-17-18-toggler').on('click', function() {
-  $('#year-17-18').toggle();
-  $('#year-18-19').hide();
-  $('#year-20-21').hide();
-  $('#year-17-18').addClass('window-resize');
-  $('.portfolio-container').isotope('reloadItems').isotope();
+  $('#year-17-18').show();
 })
 
-$('#diwali-19-toggler').on('click', function() {
-  $('#diwali-19').toggle();
-  $('#holi-19').hide();
-  $('.portfolio-container').isotope('reloadItems').isotope();
+$('#diwali-toggler').on('click', function() {
+  $('#diwali').show();
 })
-$('#holi-19-toggler').on('click', function() {
-  $('#holi-19').toggle();
-  $('#diwali-19').hide();
-  $('#holi-19').addClass('window-resize');
-  $('.portfolio-container').isotope('reloadItems').isotope();
+$('#holi-toggler').on('click', function() {
+  $('#holi').show();
 })
-$("#holi-19-toggler").one("click", function () {
-  setTimeout(function() {
-    $('#holi-19').removeClass('window-resize');
-  }, 500)
-});
+$('#christmas-toggler').on('click', function() {
+  $('#christmas').show();
+})
 
 $('#hanuwantiya-toggler').on('click', function() {
-  $('#hanuwantiya').toggle();
-  $('#fortune-orange').hide();
-  $('#rishikesh').hide();
-  $('#golden-tulip').hide();
-  $('.portfolio-container').isotope('reloadItems').isotope();
+  $('#hanuwantiya').show();
 })
 $('#fortune-orange-toggler').on('click', function() {
-  $('#fortune-orange').toggle();
-  $('#hanuwantiya').hide();
-  $('#rishikesh').hide();
-  $('#golden-tulip').hide();
-  $('#fortune-orange').addClass('window-resize');
-  $('.portfolio-container').isotope('reloadItems').isotope();
+  $('#fortune-orange').show();
 })
-$("#fortune-orange-toggler").one("click", function () {
-  setTimeout(function() {
-    $('#fortune-orange').removeClass('window-resize');
-  }, 500)
-});
 $('#rishikesh-toggler').on('click', function() {
-  $('#rishikesh').toggle();
-  $('#fortune-orange').hide();
-  $('#hanuwantiya').hide();
-  $('#golden-tulip').hide();
-  $('#rishikesh').addClass('window-resize');
-  $('.portfolio-container').isotope('reloadItems').isotope();
+  $('#rishikesh').show();
 })
-$("#rishikesh-toggler").one("click", function () {
-  setTimeout(function() {
-    $('#rishikesh').removeClass('window-resize');
-  }, 500)
-});
 $('#golden-tulip-toggler').on('click', function() {
-  $('#golden-tulip').toggle();
-  $('#fortune-orange').hide();
-  $('#rishikesh').hide();
-  $('#hanuwantiya').hide();
-  $('#golden-tulip').addClass('window-resize');
-  $('.portfolio-container').isotope('reloadItems').isotope();
+  $('#golden-tulip').show();
 })
-$("#golden-tulip-toggler").one("click", function () {
-  setTimeout(function() {
-    $('#golden-tulip').removeClass('window-resize');
-  }, 500)
+
+$('#training-toggler').on('click', function() {
+  $('#training').show();
+})
+
+$('.masonry').click(function(e) {
+  if ($(e.target).closest(".masonry-wrapper").length > 0 ) {
+    
+  } else {
+    $('.masonry').hide();
+    $(".masonry-wrapper").css({
+      'opacity': '0',
+      'transform': 'scale(0.5)'
+    });
+  }
 });
 
+$(window).on('click', function() {
+  if ($('#year-20-21').css('display') == 'block' || $('#year-18-19').css('display') == 'block' || $('#year-17-18').css('display') == 'block' || $('#diwali').css('display') == 'block' || $('#holi').css('display') == 'block' || $('#christmas').css('display') == 'block' || $('#hanuwantiya').css('display') == 'block' || $('#fortune-orange').css('display') == 'block' || $('#rishikesh').css('display') == 'block' || $('#golden-tulip').css('display') == 'block' || $('#training').css('display') == 'block') {
+    $('html').css('overflow-y', 'hidden');
+  } else {
+    $('html').css('overflow-y', 'scroll');
+  }
+})
 
-$(window).resize(function() {
-  $('.masonry').addClass('window-resize');
-  setTimeout(function() {
-    $('.masonry').removeClass('window-resize');
-  }, 500)
-});
-
-$('.masonry .fa-times').on('click', function() {
+$('.masonry .close-album').on('click', function() {
   $('.masonry').hide();
-  $('.portfolio-container').isotope('reloadItems').isotope();
+  $(".masonry-wrapper").css({
+    'opacity': '0',
+    'transform': 'scale(0.5)'
+  });
 })

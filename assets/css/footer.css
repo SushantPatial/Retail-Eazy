@@ -70,49 +70,65 @@ footer .other-icons {
   margin-bottom: 30px;
   margin-top: -10px;
 }
+footer  .other-icons a {
+  border-radius: 50%;
+}
 footer  .other-icons img {
   width: 38px;
   margin-right: 8px;
   transition: 0.5s ease;
 }
-footer .other-icons img:hover {
-  transform: scale(0.95);
-}
 
 footer .footer-icons {
   display: flex;
   align-items: center;
+  margin-top: -15px;
 }
-footer .footer-icons a {
-  color: white;
-}
-footer .footer-icon {
+footer .footer-icons .footer-icon {
   border-radius: 50%;
   width: 38px;
   height: 38px;
-  margin-top: -10px;
   margin-right: 8px;
-  transition: 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-footer .footer-icon:hover {
-  transform: scale(0.95);
+footer .footer-icons a:nth-child(1) .footer-icon {
+  border: 2px solid #3B5998;
+  color: #3B5998;
+}
+footer .footer-icons a:nth-child(1) .footer-icon:hover {
+  background-color: #3B5998;
+  color: #fff;
+}
+footer .footer-icons a:nth-child(2) .footer-icon {
+  border: 2px solid #55ACEE;
+  color: #55ACEE;
+}
+footer .footer-icons a:nth-child(2) .footer-icon:hover {
+  background-color: #55ACEE;
+  color: #fff;
+}
+footer .footer-icons a:nth-child(3) .footer-icon {
+  border: 2px solid #e7292c;
+  color: #e7292c;
+}
+footer .footer-icons a:nth-child(3) .footer-icon:hover {
+  background-color: #e7292c;
+  color: #fff;
+}
+footer .footer-icons a:nth-child(4) .footer-icon {
+  border: 2px solid #007AB9;
+  color: #007AB9;
+}
+footer .footer-icons a:nth-child(4) .footer-icon:hover {
+  background-color: #007AB9;
+  color: #fff;
 }
 footer .footer-icon i {
-  font-size: 20px;
-  margin-top: 9.5px;
-  margin-left: 8px;
-}
-footer .fa-facebook-f {
-  margin-top: 10px !important;
-  margin-left: 13px !important;
-}
-footer .fa-twitter {
-  margin-top: 10px !important;
-  margin-left: 10px !important;
-}
-footer .fa-linkedin-in {
-  margin-top: 10px !important;
-  margin-left: 11px !important;
+  font-size: 15px;
+  position: absolute;
+  z-index: 1;
 }
 
 footer .footer-downloads {
