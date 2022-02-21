@@ -1676,10 +1676,16 @@
     width: 100%;
   }
   .contact .container .address-map {
-    padding: 0 5%;
+    padding: 0%;
     width: 100%;
     height: 300px;
     margin-top: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact .container .row > * {
+    text-align: center;
+    margin: 10px 0;
   }
 }
 
