@@ -285,7 +285,7 @@ let swiper1 = new Swiper(".slide4-test-swiper", {
 
 let swiper2 = new Swiper(".slide4-mobile-swiper", {
   loop: true,
-  simulateTouch: false,
+  simulateTouch: true,
   slidesPerView: 3,
   centeredSlides: true,
   spaceBetween: 30,

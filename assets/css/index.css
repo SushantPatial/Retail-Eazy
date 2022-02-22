@@ -863,7 +863,7 @@
 .waterfall-mobile .mobile-swiper-info {
   width: 100%;
   height: 50%;
-  padding: 0 20px 0 30px;
+  padding: 40px 20px 30px 30px;
   background-color: rgb(20, 26, 41);
   display: flex;
   align-items: center;
@@ -883,7 +883,8 @@
   background: linear-gradient(to left top, rgb(27, 141, 194), rgb(41, 165, 223), rgb(211, 222, 252));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
   transform: translateX(0px);
 }
 
@@ -909,6 +910,10 @@
   font-size: 20px;
   margin-top: 10px;
   transform: translateX(0px);
+}
+
+.waterfall-mobile .mobile-swiper-info p span {
+  bottom: 22px !important;
 }
 
 .waterfall-mobile .mobile-swiper-info p i {
@@ -1118,6 +1123,10 @@
   
   .slide2-mobile-phone {
     width: 150px;
+    bottom: 20px;
+  }
+  .slide2-mobile-phone1 {
+    margin-left: -20px;
   }
 
   .slide3-mobile-phone {
@@ -1633,6 +1642,11 @@
 	transform: scale3d(1,1,1);
 }
 
+@media screen and (max-width: 768px) {
+  .blogs .row .col-lg-3 .blog-img {
+    height: 300px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Contact Us
