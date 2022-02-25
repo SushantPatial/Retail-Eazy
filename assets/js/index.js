@@ -34,34 +34,40 @@ const portfolioLightbox1 = GLightbox({
     }    
   });
 
-  $( window ).resize(function() {
+  $( window ).on("resize", function() {
     if ($(window).width() < 700) {
-      $(".features-img").attr("src","assets/images/features-mobile.jpg");
+      $(".features-img").attr("src","assets/images/features-mobile.png");
       $(".features-img").addClass("features-img-mobile");
       $("#vid").addClass("hero-vid-mobile");
     }
     else {
-      $(".features-img").attr("src","assets/images/features.jpg");
+      $(".features-img").attr("src","assets/images/features.png");
+      $(".features-img").removeClass("features-img-mobile");
+      $("#vid").removeClass("hero-vid-mobile");
+    }
+  });
+  $( window ).on('load', function() {
+    if ($(window).width() < 700) {
+      $(".features-img").attr("src","assets/images/features-mobile.png");
+      $(".features-img").addClass("features-img-mobile");
+      $("#vid").addClass("hero-vid-mobile");
+    }
+    else {
+      $(".features-img").attr("src","assets/images/features.png");
       $(".features-img").removeClass("features-img-mobile");
       $("#vid").removeClass("hero-vid-mobile");
     }
   });
 
-  if ($(window).width() < 700) {
-    $("#vid").addClass("hero-vid-mobile");
-  }
-  else {
-    $("#vid").removeClass("hero-vid-mobile");
-  }
-
-  if ($(window).width() < 576) {
-    $("#video .section-title h2").html("Video Tutorials");
-  }
-  else {
-    $("#video .section-title h2").html("Some Short Video Tutorials");
-  }
-
   $(window).on("resize", function() {
+    if ($(window).width() < 576) {
+      $("#video .section-title h2").html("Video Tutorials");
+    }
+    else {
+      $("#video .section-title h2").html("Some Short Video Tutorials");
+    }
+  })
+  $(window).on("load", function() {
     if ($(window).width() < 576) {
       $("#video .section-title h2").html("Video Tutorials");
     }
@@ -143,14 +149,14 @@ const portfolioLightbox1 = GLightbox({
       $('.slide3-test-phone2').addClass('animate-slide3-test-phone2');
       $('.slide3-test-phone3').addClass('animate-slide3-test-phone3');
       $('.slide3-test-phone4').addClass('animate-slide3-test-phone4');
-      $('.slide3-test-phone5').addClass('animate-slide3-test-phone5');   
+      // $('.slide3-test-phone5').addClass('animate-slide3-test-phone5');   
     }
     if (($(window).scrollTop() <= $('.slide-test3').offset().top - 200 || $(window).scrollTop() >= $('.slide-test3').offset().top + $('.slide-test3').height() - 400) && $(window).width() > 1200) {
       $('.slide3-test-phone1').removeClass('animate-slide3-test-phone1');
       $('.slide3-test-phone2').removeClass('animate-slide3-test-phone2');
       $('.slide3-test-phone3').removeClass('animate-slide3-test-phone3');
       $('.slide3-test-phone4').removeClass('animate-slide3-test-phone4');
-      $('.slide3-test-phone5').removeClass('animate-slide3-test-phone5');     
+      // $('.slide3-test-phone5').removeClass('animate-slide3-test-phone5');     
     }
   });
 
@@ -185,14 +191,14 @@ const portfolioLightbox1 = GLightbox({
       $('.slide3-mobile-phone2').addClass('animate1-slide3-mobile-phone2');
       $('.slide3-mobile-phone3').addClass('animate1-slide3-mobile-phone3');
       $('.slide3-mobile-phone4').addClass('animate1-slide3-mobile-phone4');
-      $('.slide3-mobile-phone5').addClass('animate1-slide3-mobile-phone5');   
+      // $('.slide3-mobile-phone5').addClass('animate1-slide3-mobile-phone5');   
     }
     if (($(window).scrollTop() <= $('.slide-mobile3').offset().top - 200 || $(window).scrollTop() >= $('.slide-mobile3').offset().top + $('.slide-mobile3').height() - 400) && ($(window).width() <= 1200 && $(window).width() > 620)) {
       $('.slide3-mobile-phone1').removeClass('animate1-slide3-mobile-phone1');
       $('.slide3-mobile-phone2').removeClass('animate1-slide3-mobile-phone2');
       $('.slide3-mobile-phone3').removeClass('animate1-slide3-mobile-phone3');
       $('.slide3-mobile-phone4').removeClass('animate1-slide3-mobile-phone4');
-      $('.slide3-mobile-phone5').removeClass('animate1-slide3-mobile-phone5');     
+      // $('.slide3-mobile-phone5').removeClass('animate1-slide3-mobile-phone5');     
     }
   });
 
@@ -227,14 +233,14 @@ const portfolioLightbox1 = GLightbox({
       $('.slide3-mobile-phone2').addClass('animate2-slide3-mobile-phone2');
       $('.slide3-mobile-phone3').addClass('animate2-slide3-mobile-phone3');
       $('.slide3-mobile-phone4').addClass('animate2-slide3-mobile-phone4');
-      $('.slide3-mobile-phone5').addClass('animate2-slide3-mobile-phone5');   
+      // $('.slide3-mobile-phone5').addClass('animate2-slide3-mobile-phone5');   
     }
     if ((($(window).scrollTop() <= $('.slide-mobile3').offset().top - 200 || $(window).scrollTop() >= $('.slide-mobile3').offset().top + $('.slide-mobile3').height() - 400) && $(window).width() <= 620) || $(window).width() > 620) {
       $('.slide3-mobile-phone1').removeClass('animate2-slide3-mobile-phone1');
       $('.slide3-mobile-phone2').removeClass('animate2-slide3-mobile-phone2');
       $('.slide3-mobile-phone3').removeClass('animate2-slide3-mobile-phone3');
       $('.slide3-mobile-phone4').removeClass('animate2-slide3-mobile-phone4');
-      $('.slide3-mobile-phone5').removeClass('animate2-slide3-mobile-phone5');     
+      // $('.slide3-mobile-phone5').removeClass('animate2-slide3-mobile-phone5');     
     }
   }); 
 
